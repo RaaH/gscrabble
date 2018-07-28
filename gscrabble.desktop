@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=GoldenScrabble
+Comment=crossword puzzle game
+Comment[ar]=لعبة كلمات متقاطعة
+Exec=gscrabble
+Icon=gscrabble
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=X-Islamic-Software;GTK;Game;
+StartupNotify=True
+Name[ar]=سكرابل الذهبية
+Name[ar_DZ]=gscrabble

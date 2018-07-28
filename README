@@ -1,35 +1,36 @@
-سكرابل الذهبية:
+Golden Scrabble:
 ----------------------------
 
-الوصف:
+Description:
 ------------
+crossword puzzle game is funny and useful.
 
-لعبة كلمات متقاطعة مسلية ومفيدة.
-
-
-الاعتماديات:
+Dependencies:
 -------------
+    - python3
+    - python3-gi >= 3.14
+    - gir1.2-gtk-3.0 >> 3.14
+    - gir1.2-gstreamer-1.0
+    - gnome-icon-theme-symbolic
 
-ا - python-gobject >= 3.14
-ب- gir1.2-gtk-3.0
-ج- python3
-د- gir1.2-gstreamer-0.10
-
-
-الرخصة:
+License:
 --------
+GPL v2 or above.
 
-رخصة «وقف» العامة .
 
-
-التثبيت:
+Installation:
 -------------
+In terminal, run the following (as root):
+> python3 setup.py install --prefix=/usr
+Or run script (as root):
+> ./install
 
-شغل مخطوط "install" وأنت جذر. (ex: sudo ./install).
 
+Remove (Uninstall):
+-------------------
+In terminal run the following (as root):
+> python3 setup.py uninstall
+Or run script (as root):
+> ./uninstall
 
-الحذف:
--------
-
-شغل مخطوط "uninstall" وأنت جذر. (ex: sudo ./uninstall).
 
