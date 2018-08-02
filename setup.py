@@ -11,7 +11,7 @@ data_files = [
               ('share/applications/', ['gscrabble.desktop']),
               ('share/icons/hicolor/gscalable/apps', ['gscrabble.svg']),
               ('share/doc/GScrabble', doc_files),
-	          ('share/GScrabble/modules', glob('modules/*.py')),
+	      ('share/GScrabble/modules', glob('modules/*.py')),
               ('share/GScrabble/data/stems', glob('data/stems/*.*')),
               ('share/GScrabble/data/dicts', glob('data/dicts/*.*')),
               ('share/GScrabble/locale/en/LC_MESSAGES/', ['locale/en/LC_MESSAGES/gscrabble.mo']),
