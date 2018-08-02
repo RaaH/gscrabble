@@ -64,7 +64,8 @@ LANGUAGES_SCRABBLE = [
 LANGUAGES_SURFACE = [
             '< System >',
              'العربية',
-             'English'
+             'English',
+             'Nederlands'
              ]
 
 DICT_LANGUAGES_CODE = {
