@@ -1,0 +1,42 @@
+{
+    "app-id": "com.github.Raah.Gscrabble",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.28",
+    "sdk": "org.gnome.Sdk",
+    "command": "gscrabble",
+    "rename-desktop-file" : "gscrabble.desktop",
+    "rename-icon" : "gscrabble",
+    "copy-icon" : true,
+    "finish-args": [
+        "--device=dri",
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--socket=fallback-x11",
+        "--socket=pulseaudio",
+        "--filesystem=~/.gscrabble"
+     ],
+    "modules": [
+        {
+            "name": "gscrabble",
+            "buildsystem": "simple",
+            "cleanup": ["/share/doc"],
+            "build-commands": [
+                "python3 setup.py install --prefix=${FLATPAK_DEST}",
+                "mkdir -p ${FLATPAK_DEST}/share/metainfo",
+                "cp -f com.github.Raah.Gscrabble.appdata.xml ${FLATPAK_DEST}/share/metainfo"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/yucefsourani/gscrabble"
+                },
+                {
+                    "type": "file",
+                    "path": "com.github.Raah.Gscrabble.appdata.xml"
+                }
+            ]
+        }
+    ]
+}
+
