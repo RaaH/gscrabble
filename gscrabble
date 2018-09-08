@@ -2,9 +2,14 @@
 # -*- coding: UTF-8 -*-
 
 from site import addsitedir
+from os import getenv
+
 addsitedir('/usr/local/share/GScrabble/modules')
 addsitedir('/usr/share/GScrabble/modules')
 addsitedir('./modules')
+if getenv("FLATPAK_SANDBOX_DIR"):
+    addsitedir('/app/local/share/GScrabble/modules')
+    addsitedir('/app/share/GScrabble/modules')
 
 import gscrabble
 gscrabble.main()
