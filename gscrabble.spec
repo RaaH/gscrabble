@@ -11,7 +11,7 @@ URL:       http://sourceforge.net/projects/gscrabble/
 #https://github.com/RaaH/arabic_scrabble
 Source0:   http://garr.dl.sourceforge.net/project/gscrabble/%{name}-%{version}.tar.xz
 BuildRequires:  gstreamer-devel pygobject3-devel python3-devel ImageMagick
-Requires:  gstreamer pygobject3 python3 gnome-icon-theme-symbolic
+Requires:  gstreamer pygobject3 python3
 BuildRoot: %{_tmppath}/%{name}-%{version}-build  
 BuildArch: noarch
 
