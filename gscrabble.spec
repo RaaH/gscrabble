@@ -2,7 +2,7 @@
 %global __os_install_post %(echo '%{__os_install_post}' | sed -e 's!/usr/lib[^[:space:]]*/brp-python-bytecompile[[:space:]].*$!!g')
 
 Name:      GoldenScrabble
-License:   Waqf
+License:   GPL v2 or above.
 Group:     System Environment/Base
 Version:   0.1.0
 Release:   1
