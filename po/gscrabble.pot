@@ -339,7 +339,7 @@ msgid "Undo a letter"
 msgstr ""
 
 #: modules/dialog_preference.py:457
-msgid "Add a letters"
+msgid "Add a letter"
 msgstr ""
 
 #: modules/dialog_preference.py:486
