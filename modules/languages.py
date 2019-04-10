@@ -65,6 +65,7 @@ LANGUAGES_SURFACE = [
             '< System >',
              'العربية',
              'English',
+             'Français',
              'Nederlands'
              ]
 
