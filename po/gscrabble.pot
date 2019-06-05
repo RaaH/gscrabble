@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the gscrabble package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-28 03:50+0100\n"
+"Project-Id-Version: gscrabble\n"
+"Report-Msgid-Bugs-To: bugs@ordissimo.com\n"
+"POT-Creation-Date: 2019-06-05 18:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,619 +17,141 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: modules/change_my_letters.py:68
-msgid "Change my letters"
-msgstr ""
-
-#: modules/change_my_letters.py:73
-msgid "If you change the letters set, you lose your role."
-msgstr ""
-
-#: modules/change_my_letters.py:79
-msgid "Select the letters to be changed."
-msgstr ""
-
-#: modules/change_my_letters.py:81
-msgid "All"
-msgstr ""
-
-#: modules/change_my_letters.py:148
-msgid "Change"
-msgstr ""
-
-#: modules/change_my_letters.py:151
-msgid "Cancel"
-msgstr ""
-
-#: modules/chequer_draw.py:27 modules/dialog_preference.py:418
-msgid "Start"
-msgstr ""
-
-#: modules/chequer_draw.py:27
-msgid "DLS"
-msgstr ""
-
-#: modules/chequer_draw.py:27
-msgid "TLS"
-msgstr ""
-
-#: modules/chequer_draw.py:28
-msgid "DWS"
-msgstr ""
-
-#: modules/chequer_draw.py:28
-msgid "TWS"
-msgstr ""
-
-#: modules/word_viewer.py:12
-msgid "Dictionary"
-msgstr ""
-
-#: modules/word_viewer.py:72
-msgid "There is no dictionary for this language."
-msgstr ""
-
-#: modules/dialog_preference.py:58
-msgid "Do you want to restore the default settings?"
-msgstr ""
-
-#: modules/dialog_preference.py:123
-msgid "It will do the change after you restart the program."
-msgstr ""
-
-#: modules/dialog_preference.py:137
-msgid ""
-"If you want to change the language you will need to start a new game. \n"
-" Do you want that?"
-msgstr ""
-
-#: modules/dialog_preference.py:144 modules/dialog_preference.py:298
-#: modules/page_starting.py:121
-msgid "Playing language:"
-msgstr ""
-
-#: modules/dialog_preference.py:156 modules/preference.py:32
-msgid ""
-"If you want to start a new game you will lose the current game. \n"
-" Do you want that?"
-msgstr ""
-
-#: modules/dialog_preference.py:213 modules/text_help.py:42
-msgid "How do I add my dictionary?"
-msgstr ""
-
-#: modules/dialog_preference.py:213 modules/text_help.py:34
-msgid "How do I add my language?"
-msgstr ""
-
-#: modules/dialog_preference.py:228 modules/preference.py:45
-#: modules/header_bar.py:240
-msgid "Preference"
-msgstr ""
-
-#: modules/dialog_preference.py:250 modules/text_help.py:54
-msgid "How to Play Scrabble"
-msgstr ""
-
-#: modules/dialog_preference.py:251 modules/text_help.py:56
-msgid "This is the law of the game in fact"
-msgstr ""
-
-#: modules/dialog_preference.py:252 modules/text_help.py:60
+#: ../modules/dialog_preference.py:252 ../modules/text_help.py:60
 msgid "1- Make sure that you have everything you need to play Scrabble:"
 msgstr ""
 
-#: modules/dialog_preference.py:253 modules/text_help.py:62
-msgid "2- Choose a dictionary to use for challenges:"
-msgstr ""
-
-#: modules/dialog_preference.py:254 modules/text_help.py:64
-msgid "3- Put the tiles in the bag and shake them:"
-msgstr ""
-
-#: modules/dialog_preference.py:255 modules/text_help.py:66
-msgid "4- Determine who goes first:"
-msgstr ""
-
-#: modules/dialog_preference.py:256 modules/text_help.py:68
-msgid "5- Draw your tiles:"
-msgstr ""
-
-#: modules/dialog_preference.py:257 modules/text_help.py:70
-msgid "6- Play the first word:"
-msgstr ""
-
-#: modules/dialog_preference.py:258 modules/text_help.py:73
-msgid "7- Count up your points:"
-msgstr ""
-
-#: modules/dialog_preference.py:259 modules/text_help.py:76
-msgid "8- Draw new tiles:"
-msgstr ""
-
-#: modules/dialog_preference.py:260 modules/text_help.py:78
-msgid "9- Build on other players’ words:"
-msgstr ""
-
-#: modules/dialog_preference.py:261 modules/text_help.py:81
+#: ../modules/dialog_preference.py:261 ../modules/text_help.py:81
 msgid "10-  Use your tiles to get the highest score possible per turn:"
 msgstr ""
 
-#: modules/dialog_preference.py:262 modules/text_help.py:87
+#: ../modules/dialog_preference.py:262 ../modules/text_help.py:87
 msgid "11-  Challenge other players to dispute a word:"
 msgstr ""
 
-#: modules/dialog_preference.py:263 modules/text_help.py:91
+#: ../modules/dialog_preference.py:263 ../modules/text_help.py:91
 msgid "12- Exchange tiles you don’t want:"
 msgstr ""
 
-#: modules/dialog_preference.py:264 modules/text_help.py:93
+#: ../modules/dialog_preference.py:264 ../modules/text_help.py:93
 msgid "13- Watch for Premium Score squares:"
 msgstr ""
 
-#: modules/dialog_preference.py:265 modules/text_help.py:96
+#: ../modules/dialog_preference.py:265 ../modules/text_help.py:96
 msgid ""
 "14- Get 50 points added to your word score if you get a bingo, also known as "
 "a bonus:"
 msgstr ""
 
-#: modules/dialog_preference.py:266 modules/text_help.py:98
+#: ../modules/dialog_preference.py:266 ../modules/text_help.py:98
 msgid "15- Add up each player’s scores at the end of the game:"
 msgstr ""
 
-#: modules/dialog_preference.py:267 modules/text_help.py:100
+#: ../modules/dialog_preference.py:267 ../modules/text_help.py:100
 msgid "16- Announce the winner:"
 msgstr ""
 
-#: modules/dialog_preference.py:271
-msgid "Game Code"
+#: ../modules/dialog_preference.py:253 ../modules/text_help.py:62
+msgid "2- Choose a dictionary to use for challenges:"
 msgstr ""
 
-#: modules/dialog_preference.py:279 modules/text_help.py:23
-msgid "The right button:"
+#: ../modules/dialog_preference.py:254 ../modules/text_help.py:64
+msgid "3- Put the tiles in the bag and shake them:"
 msgstr ""
 
-#: modules/dialog_preference.py:279 modules/text_help.py:25
-msgid "The left button:"
+#: ../modules/dialog_preference.py:255 ../modules/text_help.py:66
+msgid "4- Determine who goes first:"
 msgstr ""
 
-#: modules/dialog_preference.py:279 modules/text_help.py:22
-msgid "Mouse:"
+#: ../modules/dialog_preference.py:256 ../modules/text_help.py:68
+msgid "5- Draw your tiles:"
 msgstr ""
 
-#: modules/dialog_preference.py:281
-msgid "Hot Keys"
+#: ../modules/dialog_preference.py:257 ../modules/text_help.py:70
+msgid "6- Play the first word:"
 msgstr ""
 
-#: modules/dialog_preference.py:286
-msgid "Interface language:"
+#: ../modules/dialog_preference.py:258 ../modules/text_help.py:73
+msgid "7- Count up your points:"
 msgstr ""
 
-#: modules/dialog_preference.py:312
-msgid "Add language"
+#: ../modules/dialog_preference.py:259 ../modules/text_help.py:76
+msgid "8- Draw new tiles:"
 msgstr ""
 
-#: modules/dialog_preference.py:315
-msgid "Add dictionary"
+#: ../modules/dialog_preference.py:260 ../modules/text_help.py:78
+msgid "9- Build on other players’ words:"
 msgstr ""
 
-#: modules/dialog_preference.py:328
-msgid "Add"
+#: ../modules/page_starting.py:87
+msgid "<b>Computer will start playing.</b>"
 msgstr ""
 
-#: modules/dialog_preference.py:339
-msgid "Language"
+#: ../modules/page_starting.py:84
+msgid "<b>Player will start playing.</b>"
 msgstr ""
 
-#: modules/dialog_preference.py:342
-msgid "Difficulty level:"
+#: ../modules/text_help.py:97
+msgid ""
+"A bingo is when you use all seven of your tiles to play a word. When this "
+"happens, you should add up the total value of your word plus any bonuses "
+"gained from Premium Squares and then add 50 points."
 msgstr ""
 
-#: modules/dialog_preference.py:369
-msgid "Difficulty"
-msgstr ""
-
-#: modules/dialog_preference.py:378
-msgid "Font of letters"
-msgstr ""
-
-#: modules/dialog_preference.py:378
-msgid "Font of cells"
-msgstr ""
-
-#: modules/dialog_preference.py:378
-msgid "Font of notification"
-msgstr ""
-
-#: modules/dialog_preference.py:378
-msgid "Font of window"
-msgstr ""
-
-#: modules/dialog_preference.py:394 modules/dialog_preference.py:417
-msgid "Lines of grid"
-msgstr ""
-
-#: modules/dialog_preference.py:401 modules/dialog_preference.py:432
-#: modules/dialog_preference.py:483
-msgid "Prepare defaults"
-msgstr ""
-
-#: modules/dialog_preference.py:404
-msgid "Fonts"
-msgstr ""
-
-#: modules/dialog_preference.py:414
-msgid "Color of letter"
-msgstr ""
-
-#: modules/dialog_preference.py:414
-msgid "Color of number"
-msgstr ""
-
-#: modules/dialog_preference.py:414
-msgid "Word of cell"
-msgstr ""
-
-#: modules/dialog_preference.py:414
-msgid "Background of letter"
-msgstr ""
-
-#: modules/dialog_preference.py:415
-msgid "New piece"
-msgstr ""
-
-#: modules/dialog_preference.py:415
-msgid "Last word"
-msgstr ""
-
-#: modules/dialog_preference.py:415
-msgid "Border of letter"
-msgstr ""
-
-#: modules/dialog_preference.py:416
-msgid "Background"
-msgstr ""
-
-#: modules/dialog_preference.py:416
-msgid "Background of grid"
-msgstr ""
-
-#: modules/dialog_preference.py:417
-msgid "Border of grid"
-msgstr ""
-
-#: modules/dialog_preference.py:417
-msgid "Color of notification"
-msgstr ""
-
-#: modules/dialog_preference.py:418
-msgid "Background of DLS"
-msgstr ""
-
-#: modules/dialog_preference.py:418
-msgid "Background of TLS"
-msgstr ""
-
-#: modules/dialog_preference.py:419
-msgid "Background of DWS"
-msgstr ""
-
-#: modules/dialog_preference.py:419
-msgid "Background of TWS"
-msgstr ""
-
-#: modules/dialog_preference.py:435
-msgid "Colors"
-msgstr ""
-
-#: modules/dialog_preference.py:451
-msgid "Enable audio"
-msgstr ""
-
-#: modules/dialog_preference.py:456
-msgid "Install a letter"
-msgstr ""
-
-#: modules/dialog_preference.py:456
-msgid "Adoption of the word"
-msgstr ""
-
-#: modules/dialog_preference.py:456
-msgid "Undo a letter"
-msgstr ""
-
-#: modules/dialog_preference.py:457
-msgid "Add a letters"
-msgstr ""
-
-#: modules/dialog_preference.py:486
-msgid "Sounds"
-msgstr ""
-
-#: modules/dialog_preference.py:490
-msgid "Autohide the information box"
-msgstr ""
-
-#: modules/dialog_preference.py:495
-msgid "Autohide the letters box"
-msgstr ""
-
-#: modules/dialog_preference.py:500
-msgid "Others"
-msgstr ""
-
-#: modules/add_lang_dict.py:33 modules/add_lang_dict.py:72
-msgid "Set up dictionary file..."
-msgstr ""
-
-#: modules/add_lang_dict.py:49
-msgid "Do you want to add file of {}"
-msgstr ""
-
-#: modules/add_lang_dict.py:51
-msgid "Choose language file"
-msgstr ""
-
-#: modules/add_lang_dict.py:87
-msgid "Do you want to add a dictionary of {}"
-msgstr ""
-
-#: modules/add_lang_dict.py:89
-msgid "Choose dictionary file"
-msgstr ""
-
-#: modules/preference.py:39 modules/gscrabble.py:193
-msgid "New game"
-msgstr ""
-
-#: modules/preference.py:51
+#: ../modules/preference.py:51
 msgid "About!"
 msgstr ""
 
-#: modules/rounds.py:66
+#: ../modules/dialog_preference.py:328
+msgid "Add"
+msgstr ""
+
+#: ../modules/dialog_preference.py:457
+msgid "Add a letters"
+msgstr ""
+
+#: ../modules/dialog_preference.py:315
+msgid "Add dictionary"
+msgstr ""
+
+#: ../modules/dialog_preference.py:312
+msgid "Add language"
+msgstr ""
+
+#: ../modules/header_bar.py:226 ../modules/objs_at_fullscreen.py:24
+msgid "Adopted the word that I set."
+msgstr ""
+
+#: ../modules/dialog_preference.py:456
+msgid "Adoption of the word"
+msgstr ""
+
+#: ../modules/text_help.py:99
 msgid ""
-"Well done, \n"
-" Computer role."
+"After all of the players have exhausted their tiles or cannot play any more "
+"words, add up each player’s points total. As the score keeper adds the "
+"totals, each player should let him or her know the points value (if any) of "
+"the tiles he or she has left over. Deduct this value from each player’s "
+"points total to determine each player’s final score."
 msgstr ""
 
-#: modules/rounds.py:118
-msgid "Game over."
-msgstr ""
-
-#: modules/rounds.py:121
-msgid "The computer does not have any pieces."
-msgstr ""
-
-#: modules/rounds.py:122
-msgid "You does not have any pieces."
-msgstr ""
-
-#: modules/rounds.py:123 modules/rounds.py:125
-msgid "You can not play both."
-msgstr ""
-
-#: modules/rounds.py:129
-msgid "You lost, Try again."
-msgstr ""
-
-#: modules/rounds.py:131
-msgid "You won, Congratulations to you."
-msgstr ""
-
-#: modules/rounds.py:133
-msgid "They drew, It's okay."
-msgstr ""
-
-#: modules/rounds.py:135
-msgid "Computer Points: {}."
-msgstr ""
-
-#: modules/rounds.py:137
-msgid "Your Points: {}."
-msgstr ""
-
-#: modules/rounds.py:181
-msgid "The computer does not have any words."
-msgstr ""
-
-#: modules/rounds.py:187
+#: ../modules/text_help.py:77
 msgid ""
-"Computer does not have a word if you does not have a word, the game will "
-"end. \n"
-" Do you want that?"
+"After each of your turns, you will need to draw as many new tiles as you "
+"just played. For example, if you played three of your tiles to form a word "
+"during your turn, then you need to draw three new tiles at the end of your "
+"turn. Place these new tiles on your rack and pass the bag to the next player."
 msgstr ""
 
-#: modules/rounds.py:192
-msgid "The computer changed its letters."
-msgstr ""
-
-#: modules/gscrabble.py:66
-msgid "Easier"
-msgstr ""
-
-#: modules/gscrabble.py:66
-msgid "Easy"
-msgstr ""
-
-#: modules/gscrabble.py:66
-msgid "Medium"
-msgstr ""
-
-#: modules/gscrabble.py:66
-msgid "Hard"
-msgstr ""
-
-#: modules/gscrabble.py:66
-msgid "Harder"
-msgstr ""
-
-#: modules/gscrabble.py:107
-msgid "Do you want to save this game?"
-msgstr ""
-
-#: modules/gscrabble.py:219
-msgid "Previous game"
-msgstr ""
-
-#: modules/gscrabble.py:285 modules/about.py:17 modules/header_bar.py:170
-#: modules/header_bar.py:267
-msgid "Golden Scrabble"
-msgstr ""
-
-#: modules/text_help.py:11 modules/text_help.py:12 modules/text_help.py:13
-#: modules/text_help.py:14 modules/text_help.py:15 modules/text_help.py:16
-#: modules/text_help.py:17 modules/text_help.py:18 modules/text_help.py:19
-#: modules/text_help.py:20
-msgid "Press"
-msgstr ""
-
-#: modules/text_help.py:11
-msgid "for fullscreen."
-msgstr ""
-
-#: modules/text_help.py:12
-msgid "for show About."
-msgstr ""
-
-#: modules/text_help.py:13
-msgid "for new game."
-msgstr ""
-
-#: modules/text_help.py:14
-msgid "for adopted the word."
-msgstr ""
-
-#: modules/text_help.py:15
-msgid "for passed the role to the computer."
-msgstr ""
-
-#: modules/text_help.py:16
-msgid "for change my letter group."
-msgstr ""
-
-#: modules/text_help.py:17
-msgid "for show suggested word list."
-msgstr ""
-
-#: modules/text_help.py:18
-msgid "for undo install letters."
-msgstr ""
-
-#: modules/text_help.py:19
-msgid "for show preference."
-msgstr ""
-
-#: modules/text_help.py:20
-msgid "for quit the game."
-msgstr ""
-
-#: modules/text_help.py:24
-msgid "For undoing an installed letter."
-msgstr ""
-
-#: modules/text_help.py:26
-msgid "For install a letter or change its location."
-msgstr ""
-
-#: modules/text_help.py:27
-msgid "For close the notification if it exists."
-msgstr ""
-
-#: modules/text_help.py:35
+#: ../modules/text_help.py:101
 msgid ""
-"First: I set up a text file with all the language words, where each word is "
-"in a new line."
+"After the score keeper has added each player’s scores and deducted the "
+"values of any unused tiles, he or she may announce the winner. The person "
+"who has the highest score wins the game. Second place goes to the person "
+"with the second-highest score, and so on."
 msgstr ""
 
-#: modules/text_help.py:37 modules/text_help.py:47
-msgid "Then I select the language and add it from the bottom."
-msgstr ""
-
-#: modules/text_help.py:43
-msgid "First I set up a text file with all the dictionary words, where:"
-msgstr ""
-
-#: modules/text_help.py:44
-msgid "Each word is explained in a new line."
-msgstr ""
-
-#: modules/text_help.py:45
-msgid "Separate the word and explain the sign of equality"
-msgstr ""
-
-#: modules/text_help.py:57
-msgid "from site:"
-msgstr ""
-
-#: modules/text_help.py:59
-msgid ""
-"Scrabble is a fun, classic word game. The object of the game is to get the "
-"most points by playing words on a board that you connect to words created by "
-"your fellow players. To play Scrabble, you need at least one other player. "
-"You will also need an official Scrabble board with all of its components. As "
-"you play the game, you create words, rack up points, challenge your "
-"opponents, and even exchange tiles if yours are not working for you. All the "
-"while, a scorekeeper tallies up each player’s points to determine who will "
-"win at the end of the game. If you become a fan of the game, you may "
-"consider inviting your friends to join you on a regular basis, joining a "
-"club, or entering a tournament."
-msgstr ""
-
-#: modules/text_help.py:61
-msgid ""
-"Before you begin your game, make sure that you have everything that you need "
-"to play Scrabble. You will need a game board, 100 letter tiles, one letter "
-"rack for each player, and a cloth bag to hold the letter tiles. You will "
-"also need 1-3 other people to play with."
-msgstr ""
-
-#: modules/text_help.py:63
-msgid ""
-"It is possible that during the course of your game, someone will play a word "
-"that another player believes is invalid. In a situation like this, you will "
-"need to look up the word in a dictionary. Make sure that you have a "
-"dictionary or a mobile device with a Scrabble checker app on hand to deal "
-"with challenges."
-msgstr ""
-
-#: modules/text_help.py:65
-msgid ""
-"To make sure that the letters are distributed fairly, put them into the bag, "
-"close it, and shake them around a bit."
-msgstr ""
-
-#: modules/text_help.py:67
-msgid ""
-"Pass the bag around the table and allow each player to draw one tile. Then, "
-"place your tiles face up on the table. The player with the letter that is "
-"closest to the letter “A” gets to go first. Put these letters back into the "
-"bag and shuffle them again before drawing tiles. If any player draws a blank "
-"tile, he or she will start the game."
-msgstr ""
-
-#: modules/text_help.py:69
-msgid ""
-"Beginning with the person who drew the tile closest to \"A\", allow the "
-"players to take seven tiles. Hold the bag above eye level so that you can't "
-"see the tiles. Do not show these tiles to your fellow players. Just put them "
-"onto your tile rack and pass the bag to the next player until everyone has "
-"drawn their letters."
-msgstr ""
-
-#: modules/text_help.py:71
-msgid ""
-"The player who chose the letter closest to “A” gets to play the first word. "
-"The word must use at least two tiles and it must be placed across the start "
-"square in the center of the board. The word can be laid out in a vertical or "
-"horizontal fashion, but it cannot be diagonal.\n"
-"    When calculating the first word score, keep in mind that the player who "
-"places the first word gets to double his or her total score because the "
-"start square counts as a Premium Square with a double word bonus. For "
-"example, if the total value of the first word played was 8, then the player "
-"would receive a score of 16."
-msgstr ""
-
-#: modules/text_help.py:74
+#: ../modules/text_help.py:74
 msgid ""
 "After you have put down a word, make sure that you count up your points. Add "
 "up the points on the lower right corner of each of the tiles you laid down. "
@@ -641,27 +163,376 @@ msgid ""
 "value of that letter tile only when you calculate your score."
 msgstr ""
 
-#: modules/text_help.py:77
-msgid ""
-"After each of your turns, you will need to draw as many new tiles as you "
-"just played. For example, if you played three of your tiles to form a word "
-"during your turn, then you need to draw three new tiles at the end of your "
-"turn. Place these new tiles on your rack and pass the bag to the next player."
+#: ../modules/change_my_letters.py:81
+msgid "All"
 msgstr ""
 
-#: modules/text_help.py:79
-msgid ""
-"On your next turn, you will have to add onto the words that your opponents "
-"have just played. That means that you cannot just create a freestanding word "
-"on the board, all of the tiles must be connected.\n"
-"    As you build onto the words that your opponents have played, make sure "
-"that you consider all of the connected tiles. Your addition to the board "
-"must create at least one new word, but if you connect to other tiles, from "
-"other directions, then you need to make sure that you are creating valid "
-"words with these connections."
+#: ../modules/side_infos.py:98
+msgid "All pieces"
 msgstr ""
 
-#: modules/text_help.py:82
+#: ../modules/text_help.py:92
+msgid ""
+"At some point during the game, you may decide that you want to exchange some "
+"or all of your tiles for new ones. You can use a turn to get new tiles. Just "
+"discard the tiles that you no longer want into the bag, shuffle the bag and "
+"draw the number of tiles that you discarded. Just keep in mind that you "
+"cannot play a word in addition to drawing new tiles, this will count as your "
+"turn."
+msgstr ""
+
+#: ../modules/dialog_preference.py:490
+msgid "Autohide the information box"
+msgstr ""
+
+#: ../modules/dialog_preference.py:495
+msgid "Autohide the letters box"
+msgstr ""
+
+#: ../modules/dialog_preference.py:416
+msgid "Background"
+msgstr ""
+
+#: ../modules/dialog_preference.py:418
+msgid "Background of DLS"
+msgstr ""
+
+#: ../modules/dialog_preference.py:419
+msgid "Background of DWS"
+msgstr ""
+
+#: ../modules/dialog_preference.py:418
+msgid "Background of TLS"
+msgstr ""
+
+#: ../modules/dialog_preference.py:419
+msgid "Background of TWS"
+msgstr ""
+
+#: ../modules/dialog_preference.py:416
+msgid "Background of grid"
+msgstr ""
+
+#: ../modules/dialog_preference.py:414
+msgid "Background of letter"
+msgstr ""
+
+#: ../modules/text_help.py:61
+msgid ""
+"Before you begin your game, make sure that you have everything that you need "
+"to play Scrabble. You will need a game board, 100 letter tiles, one letter "
+"rack for each player, and a cloth bag to hold the letter tiles. You will "
+"also need 1-3 other people to play with."
+msgstr ""
+
+#: ../modules/text_help.py:69
+msgid ""
+"Beginning with the person who drew the tile closest to \"A\", allow the "
+"players to take seven tiles. Hold the bag above eye level so that you can't "
+"see the tiles. Do not show these tiles to your fellow players. Just put them "
+"onto your tile rack and pass the bag to the next player until everyone has "
+"drawn their letters."
+msgstr ""
+
+#: ../modules/dialog_preference.py:417
+msgid "Border of grid"
+msgstr ""
+
+#: ../modules/dialog_preference.py:415
+msgid "Border of letter"
+msgstr ""
+
+#: ../modules/change_my_letters.py:151
+msgid "Cancel"
+msgstr ""
+
+#: ../modules/change_my_letters.py:148
+msgid "Change"
+msgstr ""
+
+#: ../modules/header_bar.py:202 ../modules/objs_at_fullscreen.py:63
+msgid "Change my letter group."
+msgstr ""
+
+#: ../modules/change_my_letters.py:68
+msgid "Change my letters"
+msgstr ""
+
+#: ../modules/page_starting.py:142 ../modules/page_starting.py:154
+msgid "Choose"
+msgstr ""
+
+#: ../modules/add_lang_dict.py:89
+msgid "Choose dictionary file"
+msgstr ""
+
+#: ../modules/add_lang_dict.py:51
+msgid "Choose language file"
+msgstr ""
+
+#: ../modules/page_starting.py:148
+msgid "Choose the computer"
+msgstr ""
+
+#: ../modules/page_starting.py:136
+msgid "Choose the player"
+msgstr ""
+
+#: ../modules/header_bar.py:210
+msgid "Close the preview."
+msgstr ""
+
+#: ../modules/dialog_preference.py:414
+msgid "Color of letter"
+msgstr ""
+
+#: ../modules/dialog_preference.py:417
+msgid "Color of notification"
+msgstr ""
+
+#: ../modules/dialog_preference.py:414
+msgid "Color of number"
+msgstr ""
+
+#: ../modules/dialog_preference.py:435
+msgid "Colors"
+msgstr ""
+
+#: ../modules/side_infos.py:117
+msgid "Computer Points:"
+msgstr ""
+
+#. -----------------------------
+#: ../modules/rounds.py:135
+msgid "Computer Points: {}."
+msgstr ""
+
+#: ../modules/rounds.py:187
+msgid ""
+"Computer does not have a word if you does not have a word, the game will "
+"end. \n"
+" Do you want that?"
+msgstr ""
+
+#: ../modules/header_bar.py:105
+msgid ""
+"Computer does not have a word if you pass the role to it, the game will "
+"end. \n"
+" Do you want that?"
+msgstr ""
+
+#: ../modules/side_infos.py:98
+msgid "Computer pieces"
+msgstr ""
+
+#: ../modules/about.py:19
+msgid "Crossword puzzle game amusing and useful."
+msgstr ""
+
+#: ../modules/chequer_draw.py:27
+msgid "DLS"
+msgstr ""
+
+#: ../modules/chequer_draw.py:28
+msgid "DWS"
+msgstr ""
+
+#: ../modules/word_viewer.py:12
+msgid "Dictionary"
+msgstr ""
+
+#: ../modules/dialog_preference.py:369
+msgid "Difficulty"
+msgstr ""
+
+#: ../modules/dialog_preference.py:342
+msgid "Difficulty level:"
+msgstr ""
+
+#: ../modules/side_infos.py:80
+msgid "Difficulty:"
+msgstr ""
+
+#: ../modules/add_lang_dict.py:87
+msgid "Do you want to add a dictionary of {}"
+msgstr ""
+
+#: ../modules/add_lang_dict.py:49
+msgid "Do you want to add file of {}"
+msgstr ""
+
+#: ../modules/dialog_preference.py:58
+msgid "Do you want to restore the default settings?"
+msgstr ""
+
+#: ../modules/gscrabble.py:107
+msgid "Do you want to save this game?"
+msgstr ""
+
+#: ../modules/text_help.py:44
+msgid "Each word is explained in a new line."
+msgstr ""
+
+#. ==========================
+#: ../modules/gscrabble.py:66
+msgid "Easier"
+msgstr ""
+
+#: ../modules/gscrabble.py:66
+msgid "Easy"
+msgstr ""
+
+#: ../modules/dialog_preference.py:451
+msgid "Enable audio"
+msgstr ""
+
+#: ../modules/page_starting.py:64
+msgid ""
+"Files for this language are not ready.\n"
+" Do you want that?"
+msgstr ""
+
+#: ../modules/text_help.py:43
+msgid "First I set up a text file with all the dictionary words, where:"
+msgstr ""
+
+#: ../modules/text_help.py:35
+msgid ""
+"First: I set up a text file with all the language words, where each word is "
+"in a new line."
+msgstr ""
+
+#: ../modules/dialog_preference.py:378
+msgid "Font of cells"
+msgstr ""
+
+#: ../modules/dialog_preference.py:378
+msgid "Font of letters"
+msgstr ""
+
+#: ../modules/dialog_preference.py:378
+msgid "Font of notification"
+msgstr ""
+
+#: ../modules/dialog_preference.py:378
+msgid "Font of window"
+msgstr ""
+
+#: ../modules/dialog_preference.py:404
+msgid "Fonts"
+msgstr ""
+
+#: ../modules/text_help.py:27
+msgid "For close the notification if it exists."
+msgstr ""
+
+#: ../modules/text_help.py:26
+msgid "For install a letter or change its location."
+msgstr ""
+
+#: ../modules/text_help.py:24
+msgid "For undoing an installed letter."
+msgstr ""
+
+#: ../modules/page_starting.py:23 ../modules/page_starting.py:107
+msgid "Former letter will start playing."
+msgstr ""
+
+#: ../modules/header_bar.py:233
+msgid "Fullscreen"
+msgstr ""
+
+#: ../modules/dialog_preference.py:271
+msgid "Game Code"
+msgstr ""
+
+#: ../modules/rounds.py:118
+msgid "Game over."
+msgstr ""
+
+#: ../modules/about.py:17 ../modules/gscrabble.py:285
+#: ../modules/header_bar.py:170 ../modules/header_bar.py:267
+msgid "Golden Scrabble"
+msgstr ""
+
+#: ../modules/about.py:21
+msgid "Golden Scrabble website"
+msgstr ""
+
+#: ../modules/gscrabble.py:66
+msgid "Hard"
+msgstr ""
+
+#: ../modules/gscrabble.py:66
+msgid "Harder"
+msgstr ""
+
+#: ../modules/dialog_preference.py:281
+msgid "Hot Keys"
+msgstr ""
+
+#: ../modules/dialog_preference.py:213 ../modules/text_help.py:42
+msgid "How do I add my dictionary?"
+msgstr ""
+
+#: ../modules/dialog_preference.py:213 ../modules/text_help.py:34
+msgid "How do I add my language?"
+msgstr ""
+
+#: ../modules/dialog_preference.py:250 ../modules/text_help.py:54
+msgid "How to Play Scrabble"
+msgstr ""
+
+#: ../modules/header_bar.py:195 ../modules/objs_at_fullscreen.py:56
+msgid "I have no word passed the role to the computer."
+msgstr ""
+
+#: ../modules/change_my_letters.py:73
+msgid "If you change the letters set, you lose your role."
+msgstr ""
+
+#: ../modules/header_bar.py:110
+msgid "If you do not have a word you will take the computer role."
+msgstr ""
+
+#: ../modules/text_help.py:88
+msgid ""
+"If you think that a player has played a word that does not exist or that "
+"another player has misspelled a word, then you can challenge that player. "
+"When you challenge a player, you look up the word in the dictionary.\n"
+"    If the word is in the dictionary and the player has spelled it "
+"correctly, then the word stays and the player gets the points. The "
+"challenger loses his or her turn.\n"
+"    If the word is not in the dictionary or the player has spelled it "
+"incorrectly, then the player must remove the word from the board. The player "
+"gains no points and loses that turn."
+msgstr ""
+
+#: ../modules/dialog_preference.py:137
+msgid ""
+"If you want to change the language you will need to start a new game. \n"
+" Do you want that?"
+msgstr ""
+
+#: ../modules/dialog_preference.py:156 ../modules/preference.py:32
+msgid ""
+"If you want to start a new game you will lose the current game. \n"
+" Do you want that?"
+msgstr ""
+
+#: ../modules/dialog_preference.py:456
+msgid "Install a letter"
+msgstr ""
+
+#: ../modules/side_infos.py:125
+msgid "Installed words:"
+msgstr ""
+
+#: ../modules/dialog_preference.py:286
+msgid "Interface language:"
+msgstr ""
+
+#: ../modules/text_help.py:82
 msgid ""
 "It is a good idea to consider multiple plays during each of your turns and "
 "to go with the play that will gain you the most points. Look for "
@@ -679,30 +550,99 @@ msgid ""
 "that it otherwise would."
 msgstr ""
 
-#: modules/text_help.py:88
+#: ../modules/text_help.py:63
 msgid ""
-"If you think that a player has played a word that does not exist or that "
-"another player has misspelled a word, then you can challenge that player. "
-"When you challenge a player, you look up the word in the dictionary.\n"
-"    If the word is in the dictionary and the player has spelled it "
-"correctly, then the word stays and the player gets the points. The "
-"challenger loses his or her turn.\n"
-"    If the word is not in the dictionary or the player has spelled it "
-"incorrectly, then the player must remove the word from the board. The player "
-"gains no points and loses that turn."
+"It is possible that during the course of your game, someone will play a word "
+"that another player believes is invalid. In a situation like this, you will "
+"need to look up the word in a dictionary. Make sure that you have a "
+"dictionary or a mobile device with a Scrabble checker app on hand to deal "
+"with challenges."
 msgstr ""
 
-#: modules/text_help.py:92
-msgid ""
-"At some point during the game, you may decide that you want to exchange some "
-"or all of your tiles for new ones. You can use a turn to get new tiles. Just "
-"discard the tiles that you no longer want into the bag, shuffle the bag and "
-"draw the number of tiles that you discarded. Just keep in mind that you "
-"cannot play a word in addition to drawing new tiles, this will count as your "
-"turn."
+#: ../modules/dialog_preference.py:123
+msgid "It will do the change after you restart the program."
 msgstr ""
 
-#: modules/text_help.py:94
+#: ../modules/dialog_preference.py:339
+msgid "Language"
+msgstr ""
+
+#: ../modules/side_infos.py:87
+msgid "Language:"
+msgstr ""
+
+#: ../modules/dialog_preference.py:415
+msgid "Last word"
+msgstr ""
+
+#: ../modules/dialog_preference.py:394 ../modules/dialog_preference.py:417
+msgid "Lines of grid"
+msgstr ""
+
+#: ../modules/gscrabble.py:66
+msgid "Medium"
+msgstr ""
+
+#: ../modules/dialog_preference.py:279 ../modules/text_help.py:22
+msgid "Mouse:"
+msgstr ""
+
+#: ../modules/gscrabble.py:193 ../modules/preference.py:39
+msgid "New game"
+msgstr ""
+
+#: ../modules/dialog_preference.py:415
+msgid "New piece"
+msgstr ""
+
+#: ../modules/header_bar.py:34
+msgid "Not a single straightness."
+msgstr ""
+
+#: ../modules/text_help.py:79
+msgid ""
+"On your next turn, you will have to add onto the words that your opponents "
+"have just played. That means that you cannot just create a freestanding word "
+"on the board, all of the tiles must be connected.\n"
+"    As you build onto the words that your opponents have played, make sure "
+"that you consider all of the connected tiles. Your addition to the board "
+"must create at least one new word, but if you connect to other tiles, from "
+"other directions, then you need to make sure that you are creating valid "
+"words with these connections."
+msgstr ""
+
+#: ../modules/dialog_preference.py:500
+msgid "Others"
+msgstr ""
+
+#: ../modules/text_help.py:67
+msgid ""
+"Pass the bag around the table and allow each player to draw one tile. Then, "
+"place your tiles face up on the table. The player with the letter that is "
+"closest to the letter “A” gets to go first. Put these letters back into the "
+"bag and shuffle them again before drawing tiles. If any player draws a blank "
+"tile, he or she will start the game."
+msgstr ""
+
+#: ../modules/side_infos.py:111
+msgid "Player Points:"
+msgstr ""
+
+#: ../modules/side_infos.py:98
+msgid "Player pieces"
+msgstr ""
+
+#: ../modules/dialog_preference.py:144 ../modules/dialog_preference.py:298
+#: ../modules/page_starting.py:121
+msgid "Playing language:"
+msgstr ""
+
+#: ../modules/dialog_preference.py:228 ../modules/header_bar.py:240
+#: ../modules/preference.py:45
+msgid "Preference"
+msgstr ""
+
+#: ../modules/text_help.py:94
 msgid ""
 "Premium Squares will alter your word scores, so pay attention to these when "
 "you play words. You can only use the bonus from a Premium Square if you laid "
@@ -715,219 +655,282 @@ msgid ""
 "letter bonus to your total before multiplying the total by three."
 msgstr ""
 
-#: modules/text_help.py:97
-msgid ""
-"A bingo is when you use all seven of your tiles to play a word. When this "
-"happens, you should add up the total value of your word plus any bonuses "
-"gained from Premium Squares and then add 50 points."
+#: ../modules/dialog_preference.py:401 ../modules/dialog_preference.py:432
+#: ../modules/dialog_preference.py:483
+msgid "Prepare defaults"
 msgstr ""
 
-#: modules/text_help.py:99
-msgid ""
-"After all of the players have exhausted their tiles or cannot play any more "
-"words, add up each player’s points total. As the score keeper adds the "
-"totals, each player should let him or her know the points value (if any) of "
-"the tiles he or she has left over. Deduct this value from each player’s "
-"points total to determine each player’s final score."
+#: ../modules/text_help.py:11 ../modules/text_help.py:12
+#: ../modules/text_help.py:13 ../modules/text_help.py:14
+#: ../modules/text_help.py:15 ../modules/text_help.py:16
+#: ../modules/text_help.py:17 ../modules/text_help.py:18
+#: ../modules/text_help.py:19 ../modules/text_help.py:20
+msgid "Press"
 msgstr ""
 
-#: modules/text_help.py:101
-msgid ""
-"After the score keeper has added each player’s scores and deducted the "
-"values of any unused tiles, he or she may announce the winner. The person "
-"who has the highest score wins the game. Second place goes to the person "
-"with the second-highest score, and so on."
+#: ../modules/gscrabble.py:219
+msgid "Previous game"
 msgstr ""
 
-#: modules/side_infos.py:80
-msgid "Difficulty:"
-msgstr ""
-
-#: modules/side_infos.py:87
-msgid "Language:"
-msgstr ""
-
-#: modules/side_infos.py:98
-msgid "All pieces"
-msgstr ""
-
-#: modules/side_infos.py:98
+#: ../modules/side_infos.py:98
 msgid "Remaining pieces"
 msgstr ""
 
-#: modules/side_infos.py:98
-msgid "Used pieces"
-msgstr ""
-
-#: modules/side_infos.py:98
-msgid "Computer pieces"
-msgstr ""
-
-#: modules/side_infos.py:98
-msgid "Player pieces"
-msgstr ""
-
-#: modules/side_infos.py:111
-msgid "Player Points:"
-msgstr ""
-
-#: modules/side_infos.py:117
-msgid "Computer Points:"
-msgstr ""
-
-#: modules/side_infos.py:125
-msgid "Installed words:"
-msgstr ""
-
-#: modules/side_infos.py:128
-msgid "Show word values."
-msgstr ""
-
-#: modules/objs_at_fullscreen.py:24 modules/header_bar.py:226
-msgid "Adopted the word that I set."
-msgstr ""
-
-#: modules/objs_at_fullscreen.py:34 modules/header_bar.py:177
-msgid "Suggested word list."
-msgstr ""
-
-#: modules/objs_at_fullscreen.py:43
-msgid "Undo install letters"
-msgstr ""
-
-#: modules/objs_at_fullscreen.py:56 modules/header_bar.py:195
-msgid "I have no word passed the role to the computer."
-msgstr ""
-
-#: modules/objs_at_fullscreen.py:63 modules/header_bar.py:202
-msgid "Change my letter group."
-msgstr ""
-
-#: modules/about.py:19
-msgid "Crossword puzzle game amusing and useful."
-msgstr ""
-
-#: modules/about.py:21
-msgid "Golden Scrabble website"
-msgstr ""
-
-#: modules/about.py:22
-msgid "translator-credits"
-msgstr ""
-
-#: modules/about.py:26
+#: ../modules/text_help.py:59
 msgid ""
-"\n"
-"        This program is free software; you can redistribute it and/or modify "
-"it under the terms of the GNU General Public License as published by the "
-"Free Software Foundation; either version 2 of the License, or (at your "
-"option) any later version.\n"
-"         "
+"Scrabble is a fun, classic word game. The object of the game is to get the "
+"most points by playing words on a board that you connect to words created by "
+"your fellow players. To play Scrabble, you need at least one other player. "
+"You will also need an official Scrabble board with all of its components. As "
+"you play the game, you create words, rack up points, challenge your "
+"opponents, and even exchange tiles if yours are not working for you. All the "
+"while, a scorekeeper tallies up each player’s points to determine who will "
+"win at the end of the game. If you become a fan of the game, you may "
+"consider inviting your friends to join you on a regular basis, joining a "
+"club, or entering a tournament."
 msgstr ""
 
-#: modules/page_starting.py:23 modules/page_starting.py:107
-msgid "Former letter will start playing."
+#: ../modules/chequer_dnd.py:55
+msgid "Select a letter for the blank piece."
 msgstr ""
 
-#: modules/page_starting.py:46
+#: ../modules/change_my_letters.py:79
+msgid "Select the letters to be changed."
+msgstr ""
+
+#: ../modules/text_help.py:45
+msgid "Separate the word and explain the sign of equality"
+msgstr ""
+
+#: ../modules/add_lang_dict.py:33 ../modules/add_lang_dict.py:72
+msgid "Set up dictionary file..."
+msgstr ""
+
+#: ../modules/page_starting.py:46
 msgid "Set up language files..."
 msgstr ""
 
-#: modules/page_starting.py:61
-msgid "This language not found"
-msgstr ""
-
-#: modules/page_starting.py:64
-msgid ""
-"Files for this language are not ready.\n"
-" Do you want that?"
-msgstr ""
-
-#: modules/page_starting.py:84
-msgid "<b>Player will start playing.</b>"
-msgstr ""
-
-#: modules/page_starting.py:87
-msgid "<b>Computer will start playing.</b>"
-msgstr ""
-
-#: modules/page_starting.py:126
+#: ../modules/page_starting.py:126
 msgid "Show all letters"
 msgstr ""
 
-#: modules/page_starting.py:136
-msgid "Choose the player"
+#: ../modules/side_infos.py:128
+msgid "Show word values."
 msgstr ""
 
-#: modules/page_starting.py:142 modules/page_starting.py:154
-msgid "Choose"
-msgstr ""
-
-#: modules/page_starting.py:148
-msgid "Choose the computer"
-msgstr ""
-
-#: modules/page_starting.py:163
-msgid "Start game"
-msgstr ""
-
-#: modules/header_bar.py:32
-msgid "You must start from the start cell."
-msgstr ""
-
-#: modules/header_bar.py:33
-msgid "The word must not be less than two letters."
-msgstr ""
-
-#: modules/header_bar.py:34
-msgid "Not a single straightness."
-msgstr ""
-
-#: modules/header_bar.py:35
-msgid "The word must be connected."
-msgstr ""
-
-#: modules/header_bar.py:36
-msgid "The word must be connected to what preceded it."
-msgstr ""
-
-#: modules/header_bar.py:40
+#: ../modules/header_bar.py:40
 msgid ""
 "Some words are not in the dictionary.\n"
 " As : {}"
 msgstr ""
 
-#: modules/header_bar.py:90
-msgid "There are no letters to change."
+#: ../modules/dialog_preference.py:486
+msgid "Sounds"
 msgstr ""
 
-#: modules/header_bar.py:105
-msgid ""
-"Computer does not have a word if you pass the role to it, the game will "
-"end. \n"
-" Do you want that?"
+#: ../modules/chequer_draw.py:27 ../modules/dialog_preference.py:418
+msgid "Start"
 msgstr ""
 
-#: modules/header_bar.py:110
-msgid "If you do not have a word you will take the computer role."
+#: ../modules/page_starting.py:163
+msgid "Start game"
 msgstr ""
 
-#: modules/header_bar.py:186
-msgid "Undo install letters."
+#: ../modules/header_bar.py:177 ../modules/objs_at_fullscreen.py:34
+msgid "Suggested word list."
 msgstr ""
 
-#: modules/header_bar.py:210
-msgid "Close the preview."
-msgstr ""
-
-#: modules/header_bar.py:233
-msgid "Fullscreen"
-msgstr ""
-
-#: modules/header_bar.py:248 modules/header_bar.py:253
+#. - dialog_help---------------------------------------------------------------------------------
+#: ../modules/header_bar.py:248 ../modules/header_bar.py:253
 msgid "Suggested words"
 msgstr ""
 
-#: modules/chequer_dnd.py:55
-msgid "Select a letter for the blank piece."
+#: ../modules/chequer_draw.py:27
+msgid "TLS"
+msgstr ""
+
+#: ../modules/chequer_draw.py:28
+msgid "TWS"
+msgstr ""
+
+#: ../modules/rounds.py:192
+msgid "The computer changed its letters."
+msgstr ""
+
+#: ../modules/rounds.py:121
+msgid "The computer does not have any pieces."
+msgstr ""
+
+#: ../modules/rounds.py:181
+msgid "The computer does not have any words."
+msgstr ""
+
+#: ../modules/dialog_preference.py:279 ../modules/text_help.py:25
+msgid "The left button:"
+msgstr ""
+
+#: ../modules/text_help.py:71
+msgid ""
+"The player who chose the letter closest to “A” gets to play the first word. "
+"The word must use at least two tiles and it must be placed across the start "
+"square in the center of the board. The word can be laid out in a vertical or "
+"horizontal fashion, but it cannot be diagonal.\n"
+"    When calculating the first word score, keep in mind that the player who "
+"places the first word gets to double his or her total score because the "
+"start square counts as a Premium Square with a double word bonus. For "
+"example, if the total value of the first word played was 8, then the player "
+"would receive a score of 16."
+msgstr ""
+
+#: ../modules/dialog_preference.py:279 ../modules/text_help.py:23
+msgid "The right button:"
+msgstr ""
+
+#: ../modules/header_bar.py:36
+msgid "The word must be connected to what preceded it."
+msgstr ""
+
+#: ../modules/header_bar.py:35
+msgid "The word must be connected."
+msgstr ""
+
+#: ../modules/header_bar.py:33
+msgid "The word must not be less than two letters."
+msgstr ""
+
+#: ../modules/text_help.py:37 ../modules/text_help.py:47
+msgid "Then I select the language and add it from the bottom."
+msgstr ""
+
+#: ../modules/header_bar.py:90
+msgid "There are no letters to change."
+msgstr ""
+
+#: ../modules/word_viewer.py:72
+msgid "There is no dictionary for this language."
+msgstr ""
+
+#: ../modules/rounds.py:133
+msgid "They drew, It's okay."
+msgstr ""
+
+#: ../modules/dialog_preference.py:251 ../modules/text_help.py:56
+msgid "This is the law of the game in fact"
+msgstr ""
+
+#: ../modules/page_starting.py:61
+msgid "This language not found"
+msgstr ""
+
+#: ../modules/about.py:26
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#: ../modules/text_help.py:65
+msgid ""
+"To make sure that the letters are distributed fairly, put them into the bag, "
+"close it, and shake them around a bit."
+msgstr ""
+
+#: ../modules/dialog_preference.py:456
+msgid "Undo a letter"
+msgstr ""
+
+#: ../modules/objs_at_fullscreen.py:43
+msgid "Undo install letters"
+msgstr ""
+
+#: ../modules/header_bar.py:186
+msgid "Undo install letters."
+msgstr ""
+
+#: ../modules/side_infos.py:98
+msgid "Used pieces"
+msgstr ""
+
+#: ../modules/rounds.py:66
+msgid ""
+"Well done, \n"
+" Computer role."
+msgstr ""
+
+#: ../modules/dialog_preference.py:414
+msgid "Word of cell"
+msgstr ""
+
+#: ../modules/rounds.py:123 ../modules/rounds.py:125
+msgid "You can not play both."
+msgstr ""
+
+#: ../modules/rounds.py:122
+msgid "You does not have any pieces."
+msgstr ""
+
+#: ../modules/rounds.py:129
+msgid "You lost, Try again."
+msgstr ""
+
+#: ../modules/header_bar.py:32
+msgid "You must start from the start cell."
+msgstr ""
+
+#: ../modules/rounds.py:131
+msgid "You won, Congratulations to you."
+msgstr ""
+
+#. -----------------------------
+#: ../modules/rounds.py:137
+msgid "Your Points: {}."
+msgstr ""
+
+#: ../modules/text_help.py:14
+msgid "for adopted the word."
+msgstr ""
+
+#: ../modules/text_help.py:16
+msgid "for change my letter group."
+msgstr ""
+
+#: ../modules/text_help.py:11
+msgid "for fullscreen."
+msgstr ""
+
+#: ../modules/text_help.py:13
+msgid "for new game."
+msgstr ""
+
+#: ../modules/text_help.py:15
+msgid "for passed the role to the computer."
+msgstr ""
+
+#: ../modules/text_help.py:20
+msgid "for quit the game."
+msgstr ""
+
+#: ../modules/text_help.py:12
+msgid "for show About."
+msgstr ""
+
+#: ../modules/text_help.py:19
+msgid "for show preference."
+msgstr ""
+
+#: ../modules/text_help.py:17
+msgid "for show suggested word list."
+msgstr ""
+
+#: ../modules/text_help.py:18
+msgid "for undo install letters."
+msgstr ""
+
+#: ../modules/text_help.py:57
+msgid "from site:"
+msgstr ""
+
+#: ../modules/about.py:22
+msgid "translator-credits"
 msgstr ""

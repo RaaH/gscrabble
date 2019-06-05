@@ -23,8 +23,6 @@ class About(Gtk.AboutDialog):
         self.set_authors(['',
                            'أحمد رغدي<asmaaarab@gmail.com>',
                            ])
-        self.set_license(_("""
-        This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
-         """))
+        self.set_license(_("This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."))
         self.run()
         self.destroy()
