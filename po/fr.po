@@ -387,11 +387,11 @@ msgstr "Jeu de mots croisés amusant et utile."
 
 #: ../modules/chequer_draw.py:27
 msgid "DLS"
-msgstr "Score Double Lettre"
+msgstr "SDL"
 
 #: ../modules/chequer_draw.py:28
 msgid "DWS"
-msgstr "Score Double Mot"
+msgstr "SDM"
 
 #: ../modules/word_viewer.py:12
 msgid "Dictionary"
@@ -881,11 +881,11 @@ msgstr "Mots suggérés"
 
 #: ../modules/chequer_draw.py:27
 msgid "TLS"
-msgstr "Score Triple Lettre"
+msgstr "STL"
 
 #: ../modules/chequer_draw.py:28
 msgid "TWS"
-msgstr "Score Triple Mot"
+msgstr "STM"
 
 #: ../modules/rounds.py:192
 msgid "The computer changed its letters."
