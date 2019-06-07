@@ -1,0 +1,8 @@
+DOMAIN = gscrabble
+BUGSADDR = bugs@ordissimo.com
+
+APPLICATIONSDIR = usr/share/applications
+
+# find .. -type f \! -path "*/.svn/*" \! -path "../po/*" -name "*desktop.in" -exec grep -l -E "^Categories=" {} \; | sed -e 's/^/  /;s/$/ \\/'
+SOURCES_PY = \
+  ../modules/*.py

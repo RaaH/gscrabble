@@ -17,6 +17,7 @@ data_files = [
               ('share/GScrabble/locale/en/LC_MESSAGES/', ['locale/en/LC_MESSAGES/gscrabble.mo']),
               ('share/GScrabble/locale/ar/LC_MESSAGES/', ['locale/ar/LC_MESSAGES/gscrabble.mo']),
 	      ('share/GScrabble/locale/nl/LC_MESSAGES/', ['locale/nl/LC_MESSAGES/gscrabble.mo']),
+	      ('share/GScrabble/locale/fr/LC_MESSAGES/', ['locale/fr/LC_MESSAGES/gscrabble.mo']),
               ('share/icons/hicolor/16x16/apps/', ['hicolor/16x16/apps/gscrabble.png']),
               ('share/icons/hicolor/22x22/apps/', ['hicolor/22x22/apps/gscrabble.png']),
               ('share/icons/hicolor/24x24/apps/', ['hicolor/24x24/apps/gscrabble.png']),
