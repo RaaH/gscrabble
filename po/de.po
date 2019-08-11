@@ -1,0 +1,938 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: bugs@ordissimo.com\n"
+"POT-Creation-Date: 2019-06-05 18:26+0200\n"
+"PO-Revision-Date: 2018-07-28 03:51+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../modules/dialog_preference.py:252 ../modules/text_help.py:60
+msgid "1- Make sure that you have everything you need to play Scrabble:"
+msgstr "1- Stelle sicher, dass du alles hast, was du brauchst, um Scrabble zu spielen:"
+
+#: ../modules/dialog_preference.py:261 ../modules/text_help.py:81
+msgid "10-  Use your tiles to get the highest score possible per turn:"
+msgstr "10- Verwenden Sie Ihre Kacheln, um die höchstmögliche Punktzahl pro Spielzug zu erzielen:"
+
+#: ../modules/dialog_preference.py:262 ../modules/text_help.py:87
+msgid "11-  Challenge other players to dispute a word:"
+msgstr "11- Fordern Sie andere Spieler auf, ein Wort zu bestreiten:"
+
+#: ../modules/dialog_preference.py:263 ../modules/text_help.py:91
+msgid "12- Exchange tiles you don’t want:"
+msgstr "12- Tausche Steine, die du nicht willst:"
+
+#: ../modules/dialog_preference.py:264 ../modules/text_help.py:93
+msgid "13- Watch for Premium Score squares:"
+msgstr "13- Achten Sie auf Felder mit Premium-Punkten:"
+
+#: ../modules/dialog_preference.py:265 ../modules/text_help.py:96
+msgid ""
+"14- Get 50 points added to your word score if you get a bingo, also known as "
+"a bonus:"
+msgstr "14- Wenn Sie ein Bingo erhalten, das auch als Bonus bezeichnet wird, werden Ihrem Wortschatz 50 Punkte hinzugefügt:"
+
+#: ../modules/dialog_preference.py:266 ../modules/text_help.py:98
+msgid "15- Add up each player’s scores at the end of the game:"
+msgstr "15- Addiere die Punkte jedes Spielers am Ende des Spiels:"
+
+#: ../modules/dialog_preference.py:267 ../modules/text_help.py:100
+msgid "16- Announce the winner:"
+msgstr "16. Bekanntgabe des Gewinners:"
+
+#: ../modules/dialog_preference.py:253 ../modules/text_help.py:62
+msgid "2- Choose a dictionary to use for challenges:"
+msgstr "2- Wählen Sie ein Wörterbuch für Herausforderungen:"
+
+#: ../modules/dialog_preference.py:254 ../modules/text_help.py:64
+msgid "3- Put the tiles in the bag and shake them:"
+msgstr "3- Legen Sie die Fliesen in den Beutel und schütteln Sie sie:"
+
+#: ../modules/dialog_preference.py:255 ../modules/text_help.py:66
+msgid "4- Determine who goes first:"
+msgstr "4- Bestimmen Sie, wer zuerst geht:"
+
+#: ../modules/dialog_preference.py:256 ../modules/text_help.py:68
+msgid "5- Draw your tiles:"
+msgstr "5- Zeichne deine Kacheln:"
+
+#: ../modules/dialog_preference.py:257 ../modules/text_help.py:70
+msgid "6- Play the first word:"
+msgstr "6- Spielen Sie das erste Wort:"
+
+#: ../modules/dialog_preference.py:258 ../modules/text_help.py:73
+msgid "7- Count up your points:"
+msgstr "7- Zählen Sie Ihre Punkte auf:"
+
+#: ../modules/dialog_preference.py:259 ../modules/text_help.py:76
+msgid "8- Draw new tiles:"
+msgstr "8- Neue Kacheln zeichnen:"
+
+#: ../modules/dialog_preference.py:260 ../modules/text_help.py:78
+msgid "9- Build on other players’ words:"
+msgstr "9- Bauen Sie auf den Worten anderer Spieler auf:"
+
+#: ../modules/page_starting.py:87
+msgid "<b>Computer will start playing.</b>"
+msgstr "<b> Der Computer wird abgespielt. </ b>"
+
+#: ../modules/page_starting.py:84
+msgid "<b>Player will start playing.</b>"
+msgstr "<b> Der Spieler beginnt zu spielen. </ b>"
+
+#: ../modules/text_help.py:97
+msgid ""
+"A bingo is when you use all seven of your tiles to play a word. When this "
+"happens, you should add up the total value of your word plus any bonuses "
+"gained from Premium Squares and then add 50 points."
+msgstr "Ein Bingo ist, wenn Sie alle sieben Ihrer Steine verwenden, um ein Wort zu spielen. In diesem Fall sollten Sie den Gesamtwert Ihres Wortes plus aller Boni, die Sie durch Premium Squares erhalten haben, addieren und dann 50 Punkte addieren."
+
+#: ../modules/preference.py:51
+msgid "About!"
+msgstr "Über"
+
+#: ../modules/dialog_preference.py:328
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: ../modules/dialog_preference.py:457
+msgid "Add a letters"
+msgstr "Fügen Sie Buchstaben hinzu"
+
+#: ../modules/dialog_preference.py:315
+msgid "Add dictionary"
+msgstr "Wörterbuch hinzufügen"
+
+#: ../modules/dialog_preference.py:312
+msgid "Add language"
+msgstr "Sprache hinzufügen"
+
+#: ../modules/header_bar.py:226 ../modules/objs_at_fullscreen.py:24
+msgid "Adopted the word that I set."
+msgstr "Ich habe das von mir gesetzte Wort angenommen."
+
+#: ../modules/dialog_preference.py:456
+msgid "Adoption of the word"
+msgstr "Annahme des Wortes"
+
+#: ../modules/text_help.py:99
+msgid ""
+"After all of the players have exhausted their tiles or cannot play any more "
+"words, add up each player’s points total. As the score keeper adds the "
+"totals, each player should let him or her know the points value (if any) of "
+"the tiles he or she has left over. Deduct this value from each player’s "
+"points total to determine each player’s final score."
+msgstr "Nachdem alle Spieler ihre Kacheln aufgebraucht haben oder keine Wörter mehr spielen können, addieren Sie die Gesamtpunktzahl aller Spieler. Während der Punktezähler die Gesamtsummen addiert, sollte jeder Spieler ihm den Punktewert (falls vorhanden) der übrig gebliebenen Kacheln mitteilen. Ziehe diesen Wert von den Gesamtpunkten jedes Spielers ab, um die endgültige Punktzahl jedes Spielers zu bestimmen."
+
+#: ../modules/text_help.py:77
+msgid ""
+"After each of your turns, you will need to draw as many new tiles as you "
+"just played. For example, if you played three of your tiles to form a word "
+"during your turn, then you need to draw three new tiles at the end of your "
+"turn. Place these new tiles on your rack and pass the bag to the next player."
+msgstr "Nach jedem deiner Züge musst du so viele neue Steine ziehen, wie du gerade gespielt hast. Wenn Sie beispielsweise während Ihres Zuges drei Ihrer Kacheln gespielt haben, um ein Wort zu bilden, müssen Sie am Ende Ihres Zuges drei neue Kacheln ziehen. Lege diese neuen Kacheln auf dein Rack und gib die Tasche an den nächsten Spieler weiter."
+
+#: ../modules/text_help.py:101
+msgid ""
+"After the score keeper has added each player’s scores and deducted the "
+"values of any unused tiles, he or she may announce the winner. The person "
+"who has the highest score wins the game. Second place goes to the person "
+"with the second-highest score, and so on."
+msgstr "Nachdem der Punktezähler die Punkte jedes Spielers addiert und die Werte nicht verwendeter Kacheln abgezogen hat, kann er den Gewinner bekannt geben. Die Person mit der höchsten Punktzahl gewinnt das Spiel. Der zweite Platz geht an die Person mit der zweithöchsten Punktzahl und so weiter."
+
+#: ../modules/text_help.py:74
+msgid ""
+"After you have put down a word, make sure that you count up your points. Add "
+"up the points on the lower right corner of each of the tiles you laid down. "
+"If you placed a tile on a Premium Square, adjust your score as indicated by "
+"the Premium Square.\n"
+"    For example, if you place a word over a square that says “Double Word” "
+"on it, then you should double the total value of your word. If you place a "
+"tile over a square that says “Double Letter”, then you should double the "
+"value of that letter tile only when you calculate your score."
+msgstr "Nachdem Sie ein Wort niedergeschrieben haben, stellen Sie sicher, dass Sie Ihre Punkte hochzählen. Addieren Sie die Punkte in der unteren rechten Ecke jeder der abgelegten Kacheln. Wenn Sie eine Kachel auf ein Premium-Quadrat gelegt haben, passen Sie Ihre Punktzahl wie im Premium-Quadrat angegeben an.\n Wenn Sie beispielsweise ein Wort über ein Quadrat mit der Aufschrift „Doppelwort“ legen, sollten Sie den Gesamtwert von verdoppeln dein Wort. Wenn Sie eine Kachel über ein Quadrat mit der Aufschrift „Doppelbuchstabe“ legen, sollten Sie den Wert dieser Kachel nur verdoppeln, wenn Sie Ihre Punktzahl berechnen."
+
+#: ../modules/change_my_letters.py:81
+msgid "All"
+msgstr "Alle"
+
+#: ../modules/side_infos.py:98
+msgid "All pieces"
+msgstr "Alle Stücke"
+
+#: ../modules/text_help.py:92
+msgid ""
+"At some point during the game, you may decide that you want to exchange some "
+"or all of your tiles for new ones. You can use a turn to get new tiles. Just "
+"discard the tiles that you no longer want into the bag, shuffle the bag and "
+"draw the number of tiles that you discarded. Just keep in mind that you "
+"cannot play a word in addition to drawing new tiles, this will count as your "
+"turn."
+msgstr "Irgendwann während des Spiels können Sie entscheiden, ob Sie einige oder alle Ihrer Kacheln gegen neue austauschen möchten. Sie können eine Runde verwenden, um neue Kacheln zu erhalten. Wirf einfach die Kacheln, die du nicht mehr haben willst, in den Beutel, mische den Beutel und ziehe die Anzahl der Kacheln, die du abgelegt hast. Denken Sie daran, dass Sie nicht nur ein Wort spielen können, sondern auch keine neuen Kacheln zeichnen. Dies zählt als Ihr Zug."
+
+#: ../modules/dialog_preference.py:490
+msgid "Autohide the information box"
+msgstr "Das Informationsfeld automatisch ausblenden"
+
+#: ../modules/dialog_preference.py:495
+msgid "Autohide the letters box"
+msgstr "Das Buchstabenfeld automatisch ausblenden"
+
+#: ../modules/dialog_preference.py:416
+msgid "Background"
+msgstr "Hintergrund"
+
+#: ../modules/dialog_preference.py:418
+msgid "Background of DLS"
+msgstr "Hintergrund von DLS"
+
+#: ../modules/dialog_preference.py:419
+msgid "Background of DWS"
+msgstr "Hintergrund der DWS"
+
+#: ../modules/dialog_preference.py:418
+msgid "Background of TLS"
+msgstr "Hintergrund von TLS"
+
+#: ../modules/dialog_preference.py:419
+msgid "Background of TWS"
+msgstr "Hintergrund von TWS"
+
+#: ../modules/dialog_preference.py:416
+msgid "Background of grid"
+msgstr "Hintergrund des Rasters"
+
+#: ../modules/dialog_preference.py:414
+msgid "Background of letter"
+msgstr "Hintergrund des Briefes"
+
+#: ../modules/text_help.py:61
+msgid ""
+"Before you begin your game, make sure that you have everything that you need "
+"to play Scrabble. You will need a game board, 100 letter tiles, one letter "
+"rack for each player, and a cloth bag to hold the letter tiles. You will "
+"also need 1-3 other people to play with."
+msgstr "Bevor Sie mit dem Spiel beginnen, stellen Sie sicher, dass Sie alles haben, was Sie zum Spielen von Scrabble benötigen. Sie benötigen ein Spielbrett, 100 Buchstabenkacheln, einen Briefständer für jeden Spieler und eine Stofftasche, um die Buchstabenkacheln zu halten. Sie werden auch 1-3 andere Leute zum Spielen brauchen."
+
+#: ../modules/text_help.py:69
+msgid ""
+"Beginning with the person who drew the tile closest to \"A\", allow the "
+"players to take seven tiles. Hold the bag above eye level so that you can't "
+"see the tiles. Do not show these tiles to your fellow players. Just put them "
+"onto your tile rack and pass the bag to the next player until everyone has "
+"drawn their letters."
+msgstr "Erlaube den Spielern, beginnend mit der Person, die das Plättchen gezogen hat, das am nächsten an \"A\" liegt, sieben Plättchen zu nehmen. Halten Sie den Beutel über Augenhöhe, damit Sie die Kacheln nicht sehen können. Zeigen Sie diese Kacheln nicht Ihren Mitspielern. Legen Sie sie einfach auf Ihren Stapel und geben Sie die Tasche an den nächsten Spieler weiter, bis alle ihre Buchstaben gezogen haben."
+
+#: ../modules/dialog_preference.py:417
+msgid "Border of grid"
+msgstr "Grenze des Rasters"
+
+#: ../modules/dialog_preference.py:415
+msgid "Border of letter"
+msgstr "Rand des Briefes"
+
+#: ../modules/change_my_letters.py:151
+msgid "Cancel"
+msgstr "Abbruch"
+
+#: ../modules/change_my_letters.py:148
+msgid "Change"
+msgstr "Ändern"
+
+#: ../modules/header_bar.py:202 ../modules/objs_at_fullscreen.py:63
+msgid "Change my letter group."
+msgstr "Ändern Sie meine Briefgruppe."
+
+#: ../modules/change_my_letters.py:68
+msgid "Change my letters"
+msgstr "Ändere meine Buchstaben"
+
+#: ../modules/page_starting.py:142 ../modules/page_starting.py:154
+msgid "Choose"
+msgstr "Wählen"
+
+#: ../modules/add_lang_dict.py:89
+msgid "Choose dictionary file"
+msgstr "Wählen Sie eine Wörterbuchdatei"
+
+#: ../modules/add_lang_dict.py:51
+msgid "Choose language file"
+msgstr "Sprachdatei auswählen"
+
+#: ../modules/page_starting.py:148
+msgid "Choose the computer"
+msgstr "Wählen Sie den Computer"
+
+#: ../modules/page_starting.py:136
+msgid "Choose the player"
+msgstr "Wähle den Spieler"
+
+#: ../modules/header_bar.py:210
+msgid "Close the preview."
+msgstr "Schließen Sie die Vorschau."
+
+#: ../modules/dialog_preference.py:414
+msgid "Color of letter"
+msgstr "Farbe des Buchstabens"
+
+#: ../modules/dialog_preference.py:417
+msgid "Color of notification"
+msgstr "Farbe der Benachrichtigung"
+
+#: ../modules/dialog_preference.py:414
+msgid "Color of number"
+msgstr "Farbe der Nummer"
+
+#: ../modules/dialog_preference.py:435
+msgid "Colors"
+msgstr "Farben"
+
+#: ../modules/side_infos.py:117
+msgid "Computer Points:"
+msgstr "Computerpunkte:"
+
+#. -----------------------------
+#: ../modules/rounds.py:135
+msgid "Computer Points: {}."
+msgstr "Computerpunkte: {}."
+
+#: ../modules/rounds.py:187
+msgid ""
+"Computer does not have a word if you does not have a word, the game will "
+"end. \n"
+" Do you want that?"
+msgstr "Computer hat kein Wort, wenn Sie kein Wort haben, wird das Spiel beendet.\n Möchtest du das?"
+
+#: ../modules/header_bar.py:105
+msgid ""
+"Computer does not have a word if you pass the role to it, the game will "
+"end. \n"
+" Do you want that?"
+msgstr "Computer hat kein Wort, wenn Sie die Rolle übergeben, wird das Spiel beendet.\n Möchtest du das?"
+
+#: ../modules/side_infos.py:98
+msgid "Computer pieces"
+msgstr "Computerstücke"
+
+#: ../modules/about.py:19
+msgid "Crossword puzzle game amusing and useful."
+msgstr "Kreuzworträtselspiel amüsant und nützlich."
+
+#: ../modules/chequer_draw.py:27
+msgid "DLS"
+msgstr "DLS"
+
+#: ../modules/chequer_draw.py:28
+msgid "DWS"
+msgstr "DWS"
+
+#: ../modules/word_viewer.py:12
+msgid "Dictionary"
+msgstr "Wörterbuch"
+
+#: ../modules/dialog_preference.py:369
+msgid "Difficulty"
+msgstr "Schwierigkeit"
+
+#: ../modules/dialog_preference.py:342
+msgid "Difficulty level:"
+msgstr "Schwierigkeitsgrad"
+
+#: ../modules/side_infos.py:80
+msgid "Difficulty:"
+msgstr "Schwierigkeitsgrad:"
+
+#: ../modules/add_lang_dict.py:87
+msgid "Do you want to add a dictionary of {}"
+msgstr "Möchten Sie ein Wörterbuch für {} hinzufügen?"
+
+#: ../modules/add_lang_dict.py:49
+msgid "Do you want to add file of {}"
+msgstr "Möchten Sie eine Datei hinzufügen von {}"
+
+#: ../modules/dialog_preference.py:58
+msgid "Do you want to restore the default settings?"
+msgstr "Möchten Sie die Standardeinstellungen wiederherstellen?"
+
+#: ../modules/gscrabble.py:107
+msgid "Do you want to save this game?"
+msgstr "Möchten Sie dieses Spiel speichern?"
+
+#: ../modules/text_help.py:44
+msgid "Each word is explained in a new line."
+msgstr "Jedes Wort wird in einer neuen Zeile erklärt."
+
+#. ==========================
+#: ../modules/gscrabble.py:66
+msgid "Easier"
+msgstr ".50 (Einfacher)"
+
+#: ../modules/gscrabble.py:66
+msgid "Easy"
+msgstr "Leicht"
+
+#: ../modules/dialog_preference.py:451
+msgid "Enable audio"
+msgstr "Audio aktivieren"
+
+#: ../modules/page_starting.py:64
+msgid ""
+"Files for this language are not ready.\n"
+" Do you want that?"
+msgstr "Dateien für diese Sprache sind nicht bereit.\n Möchten Sie das?"
+
+#: ../modules/text_help.py:43
+msgid "First I set up a text file with all the dictionary words, where:"
+msgstr "Zuerst richte ich eine Textdatei mit allen Wörterbuchwörtern ein, wobei:"
+
+#: ../modules/text_help.py:35
+msgid ""
+"First: I set up a text file with all the language words, where each word is "
+"in a new line."
+msgstr "Erstens: Ich habe eine Textdatei mit allen Sprachwörtern erstellt, wobei jedes Wort in einer neuen Zeile steht."
+
+#: ../modules/dialog_preference.py:378
+msgid "Font of cells"
+msgstr "Schriftart der Zellen"
+
+#: ../modules/dialog_preference.py:378
+msgid "Font of letters"
+msgstr "Schriftart der Buchstaben"
+
+#: ../modules/dialog_preference.py:378
+msgid "Font of notification"
+msgstr "Schriftart der Benachrichtigung"
+
+#: ../modules/dialog_preference.py:378
+msgid "Font of window"
+msgstr "Schriftart des Fensters"
+
+#: ../modules/dialog_preference.py:404
+msgid "Fonts"
+msgstr "Schriftart"
+
+#: ../modules/text_help.py:27
+msgid "For close the notification if it exists."
+msgstr "Zum Schließen der Benachrichtigung, falls vorhanden."
+
+#: ../modules/text_help.py:26
+msgid "For install a letter or change its location."
+msgstr "Zum Installieren eines Buchstabens oder zum Ändern seines Speicherorts."
+
+#: ../modules/text_help.py:24
+msgid "For undoing an installed letter."
+msgstr "Zum Rückgängigmachen eines installierten Briefes."
+
+#: ../modules/page_starting.py:23 ../modules/page_starting.py:107
+msgid "Former letter will start playing."
+msgstr "Der frühere Buchstabe wird abgespielt."
+
+#: ../modules/header_bar.py:233
+msgid "Fullscreen"
+msgstr "Vollbild"
+
+#: ../modules/dialog_preference.py:271
+msgid "Game Code"
+msgstr "Spielcode"
+
+#: ../modules/rounds.py:118
+msgid "Game over."
+msgstr "Spiel ist aus"
+
+#: ../modules/about.py:17 ../modules/gscrabble.py:285
+#: ../modules/header_bar.py:170 ../modules/header_bar.py:267
+msgid "Golden Scrabble"
+msgstr "Goldenes Scrabble"
+
+#: ../modules/about.py:21
+msgid "Golden Scrabble website"
+msgstr "Golden Scrabble-Website"
+
+#: ../modules/gscrabble.py:66
+msgid "Hard"
+msgstr "Hart"
+
+#: ../modules/gscrabble.py:66
+msgid "Harder"
+msgstr "Härter"
+
+#: ../modules/dialog_preference.py:281
+msgid "Hot Keys"
+msgstr "Hotkeys"
+
+#: ../modules/dialog_preference.py:213 ../modules/text_help.py:42
+msgid "How do I add my dictionary?"
+msgstr "Wie füge ich mein Wörterbuch hinzu?"
+
+#: ../modules/dialog_preference.py:213 ../modules/text_help.py:34
+msgid "How do I add my language?"
+msgstr "Wie füge ich meine Sprache hinzu?"
+
+#: ../modules/dialog_preference.py:250 ../modules/text_help.py:54
+msgid "How to Play Scrabble"
+msgstr "Wie man Scrabble spielt"
+
+#: ../modules/header_bar.py:195 ../modules/objs_at_fullscreen.py:56
+msgid "I have no word passed the role to the computer."
+msgstr "Ich habe kein Wort über die Rolle an den Computer weitergegeben."
+
+#: ../modules/change_my_letters.py:73
+msgid "If you change the letters set, you lose your role."
+msgstr "Wenn Sie den Buchstabensatz ändern, verlieren Sie Ihre Rolle."
+
+#: ../modules/header_bar.py:110
+msgid "If you do not have a word you will take the computer role."
+msgstr "Wenn Sie kein Wort haben, übernehmen Sie die Computerrolle."
+
+#: ../modules/text_help.py:88
+msgid ""
+"If you think that a player has played a word that does not exist or that "
+"another player has misspelled a word, then you can challenge that player. "
+"When you challenge a player, you look up the word in the dictionary.\n"
+"    If the word is in the dictionary and the player has spelled it "
+"correctly, then the word stays and the player gets the points. The "
+"challenger loses his or her turn.\n"
+"    If the word is not in the dictionary or the player has spelled it "
+"incorrectly, then the player must remove the word from the board. The player "
+"gains no points and loses that turn."
+msgstr "Wenn Sie der Meinung sind, dass ein Spieler ein Wort gespielt hat, das nicht existiert, oder dass ein anderer Spieler ein Wort falsch geschrieben hat, können Sie diesen Spieler herausfordern. Wenn Sie einen Spieler herausfordern, schlagen Sie das Wort im Wörterbuch nach.\n Wenn das Wort im Wörterbuch enthalten ist und der Spieler es richtig geschrieben hat, bleibt das Wort bestehen und der Spieler erhält die Punkte. Der Herausforderer ist nicht an der Reihe.\n Wenn das Wort nicht im Wörterbuch enthalten ist oder der Spieler es falsch geschrieben hat, muss der Spieler das Wort vom Spielplan entfernen. Der Spieler erhält keine Punkte und verliert diesen Zug."
+
+#: ../modules/dialog_preference.py:137
+msgid ""
+"If you want to change the language you will need to start a new game. \n"
+" Do you want that?"
+msgstr "Wenn Sie die Sprache ändern möchten, müssen Sie ein neues Spiel starten.\n Möchtest du das?"
+
+#: ../modules/dialog_preference.py:156 ../modules/preference.py:32
+msgid ""
+"If you want to start a new game you will lose the current game. \n"
+" Do you want that?"
+msgstr "Wenn Sie ein neues Spiel starten möchten, verlieren Sie das aktuelle Spiel.\n Möchtest du das?"
+
+#: ../modules/dialog_preference.py:456
+msgid "Install a letter"
+msgstr "Installieren Sie einen Brief"
+
+#: ../modules/side_infos.py:125
+msgid "Installed words:"
+msgstr "Installierte Wörter:"
+
+#: ../modules/dialog_preference.py:286
+msgid "Interface language:"
+msgstr "Schnittstellensprache:"
+
+#: ../modules/text_help.py:82
+msgid ""
+"It is a good idea to consider multiple plays during each of your turns and "
+"to go with the play that will gain you the most points. Look for "
+"opportunities to incorporate Premium Squares and high value letters like “Z” "
+"and “Q” into your plays. Available Premium Squares include:\n"
+"    Double Letter Score: This means that a letter placed on this square "
+"receives double the number of points that are shown on the letter.\n"
+"    Double Word Score: This means that a word that is made that includes the "
+"letter that is placed on this square receives double the number of points "
+"that it otherwise would.\n"
+"    Triple Letter Score: This means that a letter placed on this square "
+"receives three times the number of points that are shown on the letter.\n"
+"    Triple Word Score: This means that a word that is made that includes the "
+"letter that is placed on this square receives triple the number of points "
+"that it otherwise would."
+msgstr "Es ist eine gute Idee, mehrere Spiele in jedem Zug zu berücksichtigen und das Spiel zu wählen, bei dem Sie die meisten Punkte erzielen. Suchen Sie nach Möglichkeiten, Premium-Quadrate und hochwertige Buchstaben wie „Z“ und „Q“ in Ihre Spiele aufzunehmen. Verfügbare Premium-Quadrate sind:\n Doppelbuchstaben-Punktzahl: Dies bedeutet, dass ein Buchstabe auf diesem Quadrat doppelt so viele Punkte wie auf dem Buchstaben angezeigt erhält.\n Doppelwort-Punktzahl: Dies bedeutet, dass ein Wort erstellt wird, das die enthält Buchstaben, die auf diesem Quadrat platziert werden, erhalten doppelt so viele Punkte wie sonst.\n Punktzahl für drei Buchstaben: Dies bedeutet, dass ein Buchstabe, der auf diesem Quadrat platziert wird, dreimal so viele Punkte erhält, wie auf dem Buchstaben angezeigt werden.\n Dreifach Wortbewertung: Dies bedeutet, dass ein Wort, das den Buchstaben enthält, der auf diesem Quadrat platziert ist, die dreifache Anzahl von Punkten erhält, die es sonst erhalten würde."
+
+#: ../modules/text_help.py:63
+msgid ""
+"It is possible that during the course of your game, someone will play a word "
+"that another player believes is invalid. In a situation like this, you will "
+"need to look up the word in a dictionary. Make sure that you have a "
+"dictionary or a mobile device with a Scrabble checker app on hand to deal "
+"with challenges."
+msgstr "Es ist möglich, dass während Ihres Spiels jemand ein Wort spielt, das ein anderer Spieler für ungültig hält. In einer solchen Situation müssen Sie das Wort in einem Wörterbuch nachschlagen. Stellen Sie sicher, dass Sie ein Wörterbuch oder ein Mobilgerät mit einer Scrabble-Checker-App zur Hand haben, um Herausforderungen zu meistern."
+
+#: ../modules/dialog_preference.py:123
+msgid "It will do the change after you restart the program."
+msgstr "Die Änderung wird nach dem Neustart des Programms durchgeführt."
+
+#: ../modules/dialog_preference.py:339
+msgid "Language"
+msgstr "Sprache"
+
+#: ../modules/side_infos.py:87
+msgid "Language:"
+msgstr "Sprache:"
+
+#: ../modules/dialog_preference.py:415
+msgid "Last word"
+msgstr "Letztes Wort"
+
+#: ../modules/dialog_preference.py:394 ../modules/dialog_preference.py:417
+msgid "Lines of grid"
+msgstr "Linien des Gitters"
+
+#: ../modules/gscrabble.py:66
+msgid "Medium"
+msgstr "Mittel"
+
+#: ../modules/dialog_preference.py:279 ../modules/text_help.py:22
+msgid "Mouse:"
+msgstr "[ MAUSTASTE 4 ]"
+
+#: ../modules/gscrabble.py:193 ../modules/preference.py:39
+msgid "New game"
+msgstr "Neues Spiel"
+
+#: ../modules/dialog_preference.py:415
+msgid "New piece"
+msgstr "Neues Stück"
+
+#: ../modules/header_bar.py:34
+msgid "Not a single straightness."
+msgstr "Keine einzige Geradheit."
+
+#: ../modules/text_help.py:79
+msgid ""
+"On your next turn, you will have to add onto the words that your opponents "
+"have just played. That means that you cannot just create a freestanding word "
+"on the board, all of the tiles must be connected.\n"
+"    As you build onto the words that your opponents have played, make sure "
+"that you consider all of the connected tiles. Your addition to the board "
+"must create at least one new word, but if you connect to other tiles, from "
+"other directions, then you need to make sure that you are creating valid "
+"words with these connections."
+msgstr "In Ihrem nächsten Zug müssen Sie die Wörter, die Ihre Gegner gerade gespielt haben, ergänzen. Das bedeutet, dass Sie nicht einfach ein freistehendes Wort auf der Tafel erstellen können, sondern alle Kacheln miteinander verbunden sein müssen.\n Wenn Sie auf den Wörtern aufbauen, die Ihre Gegner gespielt haben, stellen Sie sicher, dass Sie alle verbundenen Kacheln berücksichtigen. Wenn Sie der Tafel hinzufügen, muss mindestens ein neues Wort erstellt werden. Wenn Sie jedoch aus anderen Richtungen eine Verbindung zu anderen Kacheln herstellen, müssen Sie sicherstellen, dass Sie mit diesen Verbindungen gültige Wörter erstellen."
+
+#: ../modules/dialog_preference.py:500
+msgid "Others"
+msgstr "Sonstiges"
+
+#: ../modules/text_help.py:67
+msgid ""
+"Pass the bag around the table and allow each player to draw one tile. Then, "
+"place your tiles face up on the table. The player with the letter that is "
+"closest to the letter “A” gets to go first. Put these letters back into the "
+"bag and shuffle them again before drawing tiles. If any player draws a blank "
+"tile, he or she will start the game."
+msgstr "Lege den Beutel um den Tisch und erlaube jedem Spieler, ein Plättchen zu ziehen. Dann legen Sie Ihre Fliesen offen auf den Tisch. Der Spieler mit dem Buchstaben, der dem Buchstaben \"A\" am nächsten kommt, darf zuerst gehen. Legen Sie diese Buchstaben zurück in die Tasche und mischen Sie sie erneut, bevor Sie Kacheln zeichnen. Wenn ein Spieler ein leeres Plättchen zieht, startet er das Spiel."
+
+#: ../modules/side_infos.py:111
+msgid "Player Points:"
+msgstr "Spielerpunkte:"
+
+#: ../modules/side_infos.py:98
+msgid "Player pieces"
+msgstr "Spielerstücke"
+
+#: ../modules/dialog_preference.py:144 ../modules/dialog_preference.py:298
+#: ../modules/page_starting.py:121
+msgid "Playing language:"
+msgstr "Spielsprache:"
+
+#: ../modules/dialog_preference.py:228 ../modules/header_bar.py:240
+#: ../modules/preference.py:45
+msgid "Preference"
+msgstr "Präferenz"
+
+#: ../modules/text_help.py:94
+msgid ""
+"Premium Squares will alter your word scores, so pay attention to these when "
+"you play words. You can only use the bonus from a Premium Square if you laid "
+"the tile over that square during the current turn. You cannot incorporate "
+"bonuses from Premium Squares that you already counted in a different turn or "
+"that were counted by a different player.\n"
+"    When adding the bonuses for plays with multiple Premium Squares, add the "
+"letter bonuses in before the word bonuses. For example, if you spell a word "
+"that has a double letter bonus and a triple word bonus, add the double "
+"letter bonus to your total before multiplying the total by three."
+msgstr "Premium Squares werden Ihre Wortwerte ändern, achten Sie also auf diese, wenn Sie Wörter spielen. Sie können den Bonus von einem Premiumfeld nur verwenden, wenn Sie das Feld in der aktuellen Runde darüber gelegt haben. Sie können keine Boni von Premium-Feldern einbeziehen, die Sie bereits in einem anderen Zug gezählt haben oder die von einem anderen Spieler gezählt wurden.\n Wenn Sie die Boni für Spiele mit mehreren Premium-Feldern hinzufügen, fügen Sie die Buchstaben-Boni vor dem Wort \"Boni\" ein. Wenn Sie beispielsweise ein Wort buchstabieren, das einen Doppelbuchstabenbonus und einen Dreifachwortbonus enthält, addieren Sie den Doppelbuchstabenbonus zu Ihrer Gesamtsumme, bevor Sie die Gesamtsumme mit drei multiplizieren."
+
+#: ../modules/dialog_preference.py:401 ../modules/dialog_preference.py:432
+#: ../modules/dialog_preference.py:483
+msgid "Prepare defaults"
+msgstr "Bereiten Sie die Standardeinstellungen vor"
+
+#: ../modules/text_help.py:11 ../modules/text_help.py:12
+#: ../modules/text_help.py:13 ../modules/text_help.py:14
+#: ../modules/text_help.py:15 ../modules/text_help.py:16
+#: ../modules/text_help.py:17 ../modules/text_help.py:18
+#: ../modules/text_help.py:19 ../modules/text_help.py:20
+msgid "Press"
+msgstr "Presse"
+
+#: ../modules/gscrabble.py:219
+msgid "Previous game"
+msgstr "Vorheriges Spiel"
+
+#: ../modules/side_infos.py:98
+msgid "Remaining pieces"
+msgstr "Reststücke"
+
+#: ../modules/text_help.py:59
+msgid ""
+"Scrabble is a fun, classic word game. The object of the game is to get the "
+"most points by playing words on a board that you connect to words created by "
+"your fellow players. To play Scrabble, you need at least one other player. "
+"You will also need an official Scrabble board with all of its components. As "
+"you play the game, you create words, rack up points, challenge your "
+"opponents, and even exchange tiles if yours are not working for you. All the "
+"while, a scorekeeper tallies up each player’s points to determine who will "
+"win at the end of the game. If you become a fan of the game, you may "
+"consider inviting your friends to join you on a regular basis, joining a "
+"club, or entering a tournament."
+msgstr "Scrabble ist ein lustiges, klassisches Wortspiel. Das Ziel des Spiels ist es, die meisten Punkte zu erzielen, indem Sie Wörter auf einem Brett spielen, das Sie mit Wörtern verbinden, die von Ihren Mitspielern erstellt wurden. Zum Spielen von Scrabble benötigen Sie mindestens einen anderen Spieler. Sie benötigen auch ein offizielles Scrabble-Board mit all seinen Komponenten. Während Sie das Spiel spielen, erstellen Sie Wörter, sammeln Punkte, fordern Ihre Gegner heraus und tauschen sogar Kacheln aus, wenn Ihre nicht für Sie arbeiten. Währenddessen zählt ein Punktezähler die Punkte jedes Spielers auf, um zu bestimmen, wer am Ende des Spiels gewinnt. Wenn Sie ein Fan des Spiels werden, können Sie Ihre Freunde einladen, sich Ihnen regelmäßig anzuschließen, einem Verein beizutreten oder an einem Turnier teilzunehmen."
+
+#: ../modules/chequer_dnd.py:55
+msgid "Select a letter for the blank piece."
+msgstr "Wählen Sie einen Buchstaben für das leere Stück."
+
+#: ../modules/change_my_letters.py:79
+msgid "Select the letters to be changed."
+msgstr "Wählen Sie die Buchstaben aus, die geändert werden sollen."
+
+#: ../modules/text_help.py:45
+msgid "Separate the word and explain the sign of equality"
+msgstr "Trenne das Wort und erkläre das Gleichheitszeichen"
+
+#: ../modules/add_lang_dict.py:33 ../modules/add_lang_dict.py:72
+msgid "Set up dictionary file..."
+msgstr "Wörterbuchdatei einrichten ..."
+
+#: ../modules/page_starting.py:46
+msgid "Set up language files..."
+msgstr "Sprachdateien einrichten ..."
+
+#: ../modules/page_starting.py:126
+msgid "Show all letters"
+msgstr "Zeige alle Buchstaben"
+
+#: ../modules/side_infos.py:128
+msgid "Show word values."
+msgstr "Zeige Wortwerte."
+
+#: ../modules/header_bar.py:40
+msgid ""
+"Some words are not in the dictionary.\n"
+" As : {}"
+msgstr "Einige Wörter sind nicht im Wörterbuch enthalten.\n Als: {}"
+
+#: ../modules/dialog_preference.py:486
+msgid "Sounds"
+msgstr "Geräusche"
+
+#: ../modules/chequer_draw.py:27 ../modules/dialog_preference.py:418
+msgid "Start"
+msgstr "Start"
+
+#: ../modules/page_starting.py:163
+msgid "Start game"
+msgstr "Spiel beginnen"
+
+#: ../modules/header_bar.py:177 ../modules/objs_at_fullscreen.py:34
+msgid "Suggested word list."
+msgstr "Vorgeschlagene Wortliste."
+
+#. - dialog_help---------------------------------------------------------------------------------
+#: ../modules/header_bar.py:248 ../modules/header_bar.py:253
+msgid "Suggested words"
+msgstr "Vorgeschlagene Wörter"
+
+#: ../modules/chequer_draw.py:27
+msgid "TLS"
+msgstr "TLS"
+
+#: ../modules/chequer_draw.py:28
+msgid "TWS"
+msgstr "TWS"
+
+#: ../modules/rounds.py:192
+msgid "The computer changed its letters."
+msgstr "Der Computer änderte seine Buchstaben."
+
+#: ../modules/rounds.py:121
+msgid "The computer does not have any pieces."
+msgstr "Der Computer hat keine Teile."
+
+#: ../modules/rounds.py:181
+msgid "The computer does not have any words."
+msgstr "Der Computer hat keine Wörter."
+
+#: ../modules/dialog_preference.py:279 ../modules/text_help.py:25
+msgid "The left button:"
+msgstr "Der linke Knopf:"
+
+#: ../modules/text_help.py:71
+msgid ""
+"The player who chose the letter closest to “A” gets to play the first word. "
+"The word must use at least two tiles and it must be placed across the start "
+"square in the center of the board. The word can be laid out in a vertical or "
+"horizontal fashion, but it cannot be diagonal.\n"
+"    When calculating the first word score, keep in mind that the player who "
+"places the first word gets to double his or her total score because the "
+"start square counts as a Premium Square with a double word bonus. For "
+"example, if the total value of the first word played was 8, then the player "
+"would receive a score of 16."
+msgstr "Der Spieler, der den Buchstaben gewählt hat, der am nächsten an „A“ liegt, darf das erste Wort spielen. Das Wort muss aus mindestens zwei Kacheln bestehen und über dem Startfeld in der Mitte des Bretts liegen. Das Wort kann vertikal oder horizontal angeordnet werden, es darf jedoch nicht diagonal sein.\n Beachten Sie bei der Berechnung der Punktzahl für das erste Wort, dass der Spieler, der das erste Wort platziert, seine Gesamtpunktzahl zu Beginn verdoppelt Quadrat zählt als Premium-Quadrat mit einem doppelten Wortbonus. Wenn beispielsweise der Gesamtwert des ersten gespielten Wortes 8 wäre, würde der Spieler eine Punktzahl von 16 erhalten."
+
+#: ../modules/dialog_preference.py:279 ../modules/text_help.py:23
+msgid "The right button:"
+msgstr "Der rechte Knopf:"
+
+#: ../modules/header_bar.py:36
+msgid "The word must be connected to what preceded it."
+msgstr "Das Wort muss mit dem Vorhergehenden verbunden sein."
+
+#: ../modules/header_bar.py:35
+msgid "The word must be connected."
+msgstr "Das Wort muss verbunden sein."
+
+#: ../modules/header_bar.py:33
+msgid "The word must not be less than two letters."
+msgstr "Das Wort darf nicht kleiner als zwei Buchstaben sein."
+
+#: ../modules/text_help.py:37 ../modules/text_help.py:47
+msgid "Then I select the language and add it from the bottom."
+msgstr "Dann wähle ich die Sprache aus und füge sie von unten hinzu."
+
+#: ../modules/header_bar.py:90
+msgid "There are no letters to change."
+msgstr "Es gibt keine Buchstaben zu ändern."
+
+#: ../modules/word_viewer.py:72
+msgid "There is no dictionary for this language."
+msgstr "Es gibt kein Wörterbuch für diese Sprache."
+
+#: ../modules/rounds.py:133
+msgid "They drew, It's okay."
+msgstr "Sie zogen, es ist okay."
+
+#: ../modules/dialog_preference.py:251 ../modules/text_help.py:56
+msgid "This is the law of the game in fact"
+msgstr "Dies ist in der Tat das Gesetz des Spiels"
+
+#: ../modules/page_starting.py:61
+msgid "This language not found"
+msgstr "Diese Sprache nicht gefunden"
+
+#: ../modules/about.py:26
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr "Dieses Programm ist freie Software; Sie können es unter den Bedingungen der GNU General Public License, wie von der Free Software Foundation veröffentlicht, weitergeben und / oder modifizieren. entweder Version 2 der Lizenz oder (nach Ihrer Wahl) eine spätere Version."
+
+#: ../modules/text_help.py:65
+msgid ""
+"To make sure that the letters are distributed fairly, put them into the bag, "
+"close it, and shake them around a bit."
+msgstr "Um sicherzustellen, dass die Briefe fair verteilt sind, legen Sie sie in den Beutel, schließen Sie ihn und schütteln Sie sie ein wenig."
+
+#: ../modules/dialog_preference.py:456
+msgid "Undo a letter"
+msgstr "Machen Sie einen Brief rückgängig"
+
+#: ../modules/objs_at_fullscreen.py:43
+msgid "Undo install letters"
+msgstr "Briefe installieren rückgängig machen"
+
+#: ../modules/header_bar.py:186
+msgid "Undo install letters."
+msgstr "Briefe installieren rückgängig machen."
+
+#: ../modules/side_infos.py:98
+msgid "Used pieces"
+msgstr "Gebrauchte Stücke"
+
+#: ../modules/rounds.py:66
+msgid ""
+"Well done, \n"
+" Computer role."
+msgstr "Gut gemacht,\n Computerrolle."
+
+#: ../modules/dialog_preference.py:414
+msgid "Word of cell"
+msgstr "Wort der Zelle"
+
+#: ../modules/rounds.py:123 ../modules/rounds.py:125
+msgid "You can not play both."
+msgstr "Sie können nicht beide spielen."
+
+#: ../modules/rounds.py:122
+msgid "You does not have any pieces."
+msgstr "Sie haben keine Stücke."
+
+#: ../modules/rounds.py:129
+msgid "You lost, Try again."
+msgstr "Sie haben verloren, versuchen Sie es erneut."
+
+#: ../modules/header_bar.py:32
+msgid "You must start from the start cell."
+msgstr "Sie müssen von der Startzelle beginnen."
+
+#: ../modules/rounds.py:131
+msgid "You won, Congratulations to you."
+msgstr "Du hast gewonnen, Glückwunsch an dich."
+
+#. -----------------------------
+#: ../modules/rounds.py:137
+msgid "Your Points: {}."
+msgstr "Ihre Punkte: {}."
+
+#: ../modules/text_help.py:14
+msgid "for adopted the word."
+msgstr "für das Wort angenommen."
+
+#: ../modules/text_help.py:16
+msgid "for change my letter group."
+msgstr "für meine Briefgruppe ändern."
+
+#: ../modules/text_help.py:11
+msgid "for fullscreen."
+msgstr "für den Vollbildmodus."
+
+#: ../modules/text_help.py:13
+msgid "for new game."
+msgstr "für neues Spiel."
+
+#: ../modules/text_help.py:15
+msgid "for passed the role to the computer."
+msgstr "für die Rolle an den Computer übergeben."
+
+#: ../modules/text_help.py:20
+msgid "for quit the game."
+msgstr "für das Spiel beenden."
+
+#: ../modules/text_help.py:12
+msgid "for show About."
+msgstr "für die Show Über."
+
+#: ../modules/text_help.py:19
+msgid "for show preference."
+msgstr "für Showpräferenz."
+
+#: ../modules/text_help.py:17
+msgid "for show suggested word list."
+msgstr "zur Anzeige der vorgeschlagenen Wortliste."
+
+#: ../modules/text_help.py:18
+msgid "for undo install letters."
+msgstr "zum rückgängig machen Buchstaben installieren."
+
+#: ../modules/text_help.py:57
+msgid "from site:"
+msgstr "vom Standort:"
+
+#: ../modules/about.py:22
+msgid "translator-credits"
+msgstr "Übersetzer-Credits"
+
