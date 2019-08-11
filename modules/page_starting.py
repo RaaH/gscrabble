@@ -10,6 +10,8 @@ from tools import *
 from data import *
 from create_dict import create_db_language
 
+from tool_bar import ToolBar
+
 import random
 
 #===============================================================
@@ -21,6 +23,7 @@ class PageStarting(Gtk.Box):
     
     def restor_to_starting_page(self, *a):
         self.lab_bar.set_label(_('Former letter will start playing.'))
+        self.tool_bar.show()
         self.info_bar.set_message_type(0)
         self.btn_start.set_sensitive(False)
         self.btn_chose1.set_sensitive(True)
@@ -29,7 +32,7 @@ class PageStarting(Gtk.Box):
     
     def start_new_game(self, *a):
         self.pt.stack.set_visible_child_name('n1')
-        self.pt.hd_bar.show_hide_action_buttons()
+        self.pt.tool_bar.show_hide_action_buttons()
         self.pt.start_new_game()
         self.restor_to_starting_page()
     
@@ -93,20 +96,22 @@ class PageStarting(Gtk.Box):
     
     def show_all_letters(self, *a):
         i  = LANGUAGES_SCRABBLE.index(DICT_LANGUAGES_NAME[self.pt.lang_code])
-        self.pt.hd_bar.combo_language_preview.set_active(i)
+        self.pt.tool_bar.icombo_language_preview.set_active(i)
         self.pt.all_letters = 1
         self.pt.stack.set_visible_child_name('n1')
         self.pt.sideinfo.hide()
         self.pt.vb_letters.hide()
-        self.pt.hd_bar.show_hide_action_buttons()
-        self.pt.hd_bar.sel_language_preview()
+        self.pt.tool_bar.show_hide_action_buttons()
+        self.pt.tool_bar.sel_language_preview()
     
     def build(self, *a):
         Gtk.Box.__init__(self, spacing=20,orientation=Gtk.Orientation.VERTICAL)
+        self.tool_bar = ToolBar(self.pt)
         self.info_bar = Gtk.InfoBar(show_close_button=False)
         self.lab_bar = Gtk.Label(_('Former letter will start playing.'))
         self.lab_bar.set_use_markup(True)
         self.info_bar.get_content_area().pack_start(self.lab_bar, True, False, 0)
+        self.pack_start(self.tool_bar, False, False, 0)
         self.pack_start(self.info_bar, False, False, 0)
         #----------------------------------------------------------------------------------
         hb0 = Gtk.Box(spacing=3,orientation=Gtk.Orientation.HORIZONTAL)

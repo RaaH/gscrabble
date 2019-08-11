@@ -13,7 +13,7 @@ from data import *
 import time
 
 #===============================================================
-class HeaderBar(Gtk.HeaderBar): 
+class ToolBar(Gtk.Toolbar): 
     
     def __init__(self, pt):
         self.pt = pt
@@ -64,6 +64,10 @@ class HeaderBar(Gtk.HeaderBar):
         self.dialog_help.set_no_show_all(False)
         self.entry_search.set_text('')
         self.dialog_help.show_all()
+
+    #-----------------------------------------------------------
+    def quit_app(self, *a):
+         Gtk.main_quit()
     
     #-----------------------------------------------------------
     def search_dialog_help(self, entry):
@@ -116,32 +120,50 @@ class HeaderBar(Gtk.HeaderBar):
     
     def show_hide_action_buttons(self, *a):
         if self.pt.all_letters == 0 and self.pt.stack.get_visible_child_name() == 'n1':
-            self.hb_actions.set_no_show_all(False)
-            self.hb_actions.show_all()
+            self.btn_help.set_no_show_all(False)
+            self.btn_help.show_all()
+            self.btn_undo.set_no_show_all(False)
+            self.btn_undo.show_all()
+            self.btn_no_play.set_no_show_all(False)
+            self.btn_no_play.show_all()
+            self.btn_change.set_no_show_all(False)
+            self.btn_change.show_all()
             self.btn_apply.set_no_show_all(False)
             self.btn_apply.show_all()
             self.btn_close_show_letters.set_no_show_all(True)
             self.btn_close_show_letters.hide()
-            self.combo_language_preview.set_no_show_all(True)
-            self.combo_language_preview.hide()
+            self.icombo_language_preview.set_no_show_all(True)
+            self.icombo_language_preview.hide()
         elif self.pt.all_letters == 1:
-            self.hb_actions.set_no_show_all(True)
-            self.hb_actions.hide()
+            self.btn_help.set_no_show_all(True)
+            self.btn_help.show_all()
+            self.btn_undo.set_no_show_all(True)
+            self.btn_undo.show_all()
+            self.btn_no_play.set_no_show_all(True)
+            self.btn_no_play.show_all()
+            self.btn_change.set_no_show_all(True)
+            self.btn_change.show_all()
             self.btn_apply.set_no_show_all(True)
             self.btn_apply.hide()
             self.btn_close_show_letters.set_no_show_all(False)
             self.btn_close_show_letters.show_all()
-            self.combo_language_preview.set_no_show_all(False)
-            self.combo_language_preview.show_all()
+            self.icombo_language_preview.set_no_show_all(False)
+            self.icombo_language_preview.show_all()
         else:
-            self.hb_actions.set_no_show_all(True)
-            self.hb_actions.hide()
+            self.btn_help.set_no_show_all(True)
+            self.btn_help.show_all()
+            self.btn_undo.set_no_show_all(True)
+            self.btn_undo.show_all()
+            self.btn_no_play.set_no_show_all(True)
+            self.btn_no_play.show_all()
+            self.btn_change.set_no_show_all(True)
+            self.btn_change.show_all()
             self.btn_apply.set_no_show_all(True)
             self.btn_apply.hide()
             self.btn_close_show_letters.set_no_show_all(True)
             self.btn_close_show_letters.hide()
-            self.combo_language_preview.set_no_show_all(True)
-            self.combo_language_preview.hide()
+            self.icombo_language_preview.set_no_show_all(True)
+            self.icombo_language_preview.hide()
 
     def close_show_letters(self, *a):
         self.pt.all_letters = 0
@@ -165,95 +187,87 @@ class HeaderBar(Gtk.HeaderBar):
         self.pt.chequer.queue_draw()
     
     def build(self, *a):
-        Gtk.HeaderBar.__init__(self)
-        self.set_show_close_button(True)
-        self.set_title(_('Golden Scrabble'))
+        Gtk.Toolbar.__init__(self)
         #===========================================
-        self.hb_actions = Gtk.Box(spacing=0,orientation=Gtk.Orientation.HORIZONTAL)
-        Gtk.StyleContext.add_class(self.hb_actions.get_style_context(), "linked")
+        #-------------------------------------------------------------------------------------------
+        self.quittb = Gtk.ToolButton(Gtk.STOCK_QUIT)
+        self.quittb.connect('clicked', self.quit_app)
+        self.insert(self.quittb, 0)
         #-------------------------------------------------------------------------------------------
         img = Gtk.Image.new_from_icon_name('dialog-information-symbolic', 2)
-        btn_help = Gtk.Button()
-        btn_help.set_tooltip_text(_('Suggested word list.'))
-        btn_help.connect('clicked', self.help_me_letters)
-        btn_help.set_image(img)
-        self.hb_actions.pack_start(btn_help, False, False, 0)
+        self.btn_help = Gtk.ToolButton.new(img, None)
+        ## self.btn_help.set_tooltip_text(_('Suggested word list.'))
+        self.btn_help.connect('clicked', self.help_me_letters)
+        self.insert(self.btn_help, -1)
         #-------------------------------------------------------------------------------------------
         nm_icon = 'edit-undo-symbolic'
         if self.pt.get_direction() == Gtk.TextDirection.RTL: nm_icon = 'edit-undo-symbolic-rtl'
         img = Gtk.Image.new_from_icon_name(nm_icon, 2)
-        btn_undo = Gtk.Button()
-        btn_undo.set_tooltip_text(_('Undo install letters.'))
-        btn_undo.connect('clicked', self.undo_added)
-        btn_undo.set_image(img)
-        self.hb_actions.pack_start(btn_undo, False, False, 0)
+        self.btn_undo = Gtk.ToolButton.new(img, None)
+        self.btn_undo.connect('clicked', self.undo_added)
+        self.insert(self.btn_undo, -1)
         #--------------------------------------------------------------------------------------------
         nm_icon = 'media-seek-forward-symbolic'
         if self.pt.get_direction() == Gtk.TextDirection.RTL: nm_icon = 'media-seek-forward-symbolic-rtl'
         img = Gtk.Image.new_from_icon_name(nm_icon, 2)
-        btn_no_play = Gtk.Button()
-        btn_no_play.set_tooltip_text(_('I have no word passed the role to the computer.'))
-        btn_no_play.connect('clicked', self.skip_2_computer)
-        btn_no_play.set_image(img)
-        self.hb_actions.pack_start(btn_no_play, False, False, 0)
+        self.btn_no_play = Gtk.ToolButton.new(img, None)
+        self.btn_no_play.connect('clicked', self.skip_2_computer)
+        self.insert(self.btn_no_play, -1)
         #-------------------------------------------------------------------------------------------
         img = Gtk.Image.new_from_icon_name('view-refresh-symbolic', 2)
-        btn_change = Gtk.Button()
-        btn_change.set_tooltip_text(_('Change my letter group.'))
-        btn_change.connect('clicked', self.change_my_letters)
-        btn_change.set_image(img)
-        self.hb_actions.pack_start(btn_change, False, False, 0)
-        self.pack_start(self.hb_actions)
+        self.btn_change = Gtk.ToolButton.new(img, None)
+        self.btn_change.connect('clicked', self.change_my_letters)
+        self.insert(self.btn_change, -1)
         #---------------------------------------------------------------------------------------------
         img = Gtk.Image.new_from_icon_name('system-shutdown-symbolic', 2)
-        self.btn_close_show_letters = Gtk.Button()
-        self.btn_close_show_letters.set_tooltip_text(_('Close the preview.'))
+        self.btn_close_show_letters = Gtk.ToolButton.new(img, None)
         self.btn_close_show_letters.connect('clicked', self.close_show_letters)
-        self.btn_close_show_letters.set_image(img)
-        self.pack_start(self.btn_close_show_letters)
+        self.insert(self.btn_close_show_letters, -1)
         self.btn_close_show_letters.set_no_show_all(True)
         #---------------------------------------------------------------------------------------------
+        self.icombo_language_preview = Gtk.ToolItem()
         self.combo_language_preview = Gtk.ComboBoxText()
         for t in LANGUAGES_SCRABBLE:
             self.combo_language_preview.append_text(t)
         self.combo_language_preview.set_wrap_width(5)
-        self.pack_start(self.combo_language_preview)
+        self.icombo_language_preview.add(self.combo_language_preview)
+        self.insert(self.icombo_language_preview, -1)
         self.combo_language_preview.connect('changed', self.sel_language_preview)
         #---------------------------------------------------------------------------------------------
         img = Gtk.Image.new_from_icon_name('emblem-ok-symbolic', 2)
-        self.btn_apply = Gtk.Button()
+        self.btn_apply = Gtk.ToolButton.new(img, None)
         self.btn_apply.set_size_request(80, -1)
-        self.btn_apply.set_tooltip_text(_('Adopted the word that I set.'))
         self.btn_apply.connect('clicked', self.apply_added)
-        self.btn_apply.set_image(img)
-        self.pack_start(self.btn_apply)
+        self.insert(self.btn_apply, -1)
         #-------------------------------------------------------------------------------------------
         img = Gtk.Image.new_from_icon_name('view-fullscreen-symbolic', 2)
-        self.btn_fullscreen = Gtk.Button()
-        self.btn_fullscreen.set_tooltip_text(_('Fullscreen'))
+        self.btn_fullscreen = Gtk.ToolButton.new(img, None)
         self.btn_fullscreen.connect('clicked', self.pt.set_fullscreen_cb)
-        self.btn_fullscreen.set_image(img)
-        self.pack_end(self.btn_fullscreen)
+        self.insert(self.btn_fullscreen, -1)
         #- btn_pref---------------------------------------------------------------------------------
+        self.btn_pref_item = Gtk.ToolItem()
         img = Gtk.Image.new_from_icon_name('open-menu-symbolic', 2)
         self.btn_pref = Gtk.MenuButton()
+        self.btn_pref_item.add(self.btn_pref)
         self.btn_pref.set_tooltip_text(_('Preference'))
         self.popover_pref = Gtk.Popover()
         self.btn_pref.set_popover(self.popover_pref)
         self.btn_pref.set_name('btn_pref')
         self.btn_pref.set_image(img)
         self.popover_pref.add(self.mepref)
-        self.pack_end(self.btn_pref)
+        self.insert(self.btn_pref_item, -1)
         #- dialog_help---------------------------------------------------------------------------------
         self.dialog_help = Gtk.Dialog(parent=self.pt, title=_('Suggested words'))
         self.dialog_help.connect("delete-event", lambda *a: self.dialog_help.hide() or True) 
-        hb_bar = Gtk.HeaderBar()
-        hb_bar.set_show_close_button(True)
-        self.dialog_help.set_titlebar(hb_bar)
-        hb_bar.set_title(_('Suggested words'))
+        hb_bar = Gtk.Toolbar()
         self.entry_search = Gtk.SearchEntry()
+        box_entry_search = Gtk.ToolItem()
+        box_entry_search.add(self.entry_search)
         self.entry_search.connect('changed', self.search_dialog_help)
-        hb_bar.pack_start(self.entry_search)
+        box_label = Gtk.ToolItem()
+        box_label.add(Gtk.Label(_('Suggested words')))
+        hb_bar.insert(box_label, 0)
+        hb_bar.insert(box_entry_search, 0)
         self.dialog_help.set_default_size(450, 300)
         area = self.dialog_help.get_content_area()
         area.set_spacing(6)
@@ -262,10 +276,19 @@ class HeaderBar(Gtk.HeaderBar):
         scroll = Gtk.ScrolledWindow()
         scroll.set_shadow_type(Gtk.ShadowType.IN)
         scroll.add(self.view)
+        area.pack_start(hb_bar, False, False, 0)
         area.pack_start(scroll, True, True, 0)
+        btn = Gtk.Button.new_from_stock(Gtk.STOCK_QUIT)
+        btn.connect("clicked", self.on_close, self)
+        area.pack_end(btn, False, False, 0)
         self.dialog_help.set_no_show_all(True)
-        self.set_custom_title(Gtk.Label(_('Golden Scrabble')))
+        # self.set_custom_title(Gtk.Label(_('Golden Scrabble')))
         self.show_hide_action_buttons()
+
+    # destroy the aboutdialog
+    def on_close(self, widget, pref):
+        pref.dialog_help.hide()
+        
         
         
         

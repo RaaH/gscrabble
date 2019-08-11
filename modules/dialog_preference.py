@@ -14,6 +14,9 @@ from text_help import *
 from word_viewer import Viewer
 from add_lang_dict import Add_lang_dict
 
+import random
+
+
 #===============================================================
 class DialogPreference(Gtk.Dialog):
     
@@ -48,13 +51,13 @@ class DialogPreference(Gtk.Dialog):
         color = btn.get_rgba().to_string()
         config.setv(nconf, color)
         self.pt.sideinfo.wordviewer.change_theme()
-        self.pt.hd_bar.view.change_theme()
+        self.pt.tool_bar.view.change_theme()
         self.pt.sideletters.change_theme()
         self.pt.chequer.queue_draw()
     
     #-----------------------------------------------------------
     def set_default(self, btn, n):
-        self.pt.hd_bar.btn_pref.set_active(False)
+        self.pt.tool_bar.btn_pref.set_active(False)
         res = sure(self.pt, _('Do you want to restore the default settings?'))
         if res == -8:
             if n == 2:
@@ -111,13 +114,13 @@ class DialogPreference(Gtk.Dialog):
                 config.setv('pipe_add_ms', 20)
             self.pt.ch_font()
             self.pt.sideinfo.wordviewer.change_theme()
-            self.pt.hd_bar.view.change_theme()
+            self.pt.tool_bar.view.change_theme()
             self.pt.sideletters.change_theme()
             self.pt.chequer.queue_draw()
 
     #-----------------------------------------------------------
     def sel_language_surface(self, btn):
-        self.pt.hd_bar.btn_pref.set_active(False)
+        self.pt.tool_bar.btn_pref.set_active(False)
         name = btn.get_active_text()
         config.setv('language_surface', name)
         info(self.pt, _('It will do the change after you restart the program.'))
@@ -131,7 +134,7 @@ class DialogPreference(Gtk.Dialog):
     def sel_language_scrabble(self, btn):
         name = btn.get_active_text()
         if name == config.getv('language_scrabble'): return
-        self.pt.hd_bar.btn_pref.set_active(False)
+        self.pt.tool_bar.btn_pref.set_active(False)
         if list(self.pt.dict_chequer.values()) == [0,]*225 or self.pt.ended == True: pass
         else:
             res = sure(self.pt, _('If you want to change the language you will need to start a new game. \n Do you want that?'))
@@ -148,7 +151,7 @@ class DialogPreference(Gtk.Dialog):
     #-----------------------------------------------------------
     def restart_game(self, *a):
         if self.pt.all_letters == 1: return
-        self.pt.hd_bar.btn_pref.set_active(False)
+        self.pt.tool_bar.btn_pref.set_active(False)
         if list(self.pt.dict_chequer.values()) == [0,]*225: self.pt.restart_game()
         if self.pt.ended == True: self.pt.restart_game()
         if self.pt.stack.get_visible_child_name() == 'n0':  self.pt.restart_game()
@@ -500,6 +503,14 @@ class DialogPreference(Gtk.Dialog):
         self.stack_pref.add_titled(vb, 'n6', _('Others'))
         
         
+        btn = Gtk.Button.new_from_stock(Gtk.STOCK_QUIT)
+        btn.connect("clicked", self.on_close)
+        area.pack_end(btn, False, False, 0)
         self.show_all()
+
+
+    # destroy the aboutdialog
+    def on_close(self, widget):
+        self.destroy()
         
         

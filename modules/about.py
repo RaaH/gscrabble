@@ -8,7 +8,6 @@ from gi.repository import Gtk
 
 #===============================================================
 class About(Gtk.AboutDialog):
-    
     def __init__(self, pt):
         self.pt = pt
         Gtk.AboutDialog.__init__(self, parent = self.pt, wrap_license = True)
@@ -24,5 +23,16 @@ class About(Gtk.AboutDialog):
                            'أحمد رغدي<asmaaarab@gmail.com>',
                            ])
         self.set_license(_("This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."))
+
+        btn = Gtk.Button.new_from_stock(Gtk.STOCK_QUIT)
+        btn.connect("clicked", self.on_close)
+
+        box = self.get_content_area()
+        box.add(btn)
+        self.show_all()
         self.run()
+        self.destroy()
+
+    # destroy the aboutdialog
+    def on_close(self, widget):
         self.destroy()

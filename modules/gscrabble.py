@@ -23,6 +23,8 @@ DOMAIN = 'gscrabble'
 gettext.install(DOMAIN, LOCALDIR)
 
 try:
+    lg, enc = locale.getdefaultlocale()
+    print('Locale : [%s] ' % lg)
     lang_name = config.getv('language_surface')
     if lang_name != '< System >':
         if lang_name == 'العربية': Gtk.Widget.set_default_direction(Gtk.TextDirection.RTL)
@@ -36,7 +38,7 @@ from side_letters import SideLetters
 from side_infos import SideInfo
 from chequer_dnd import Chequer
 from scrabble_core import Dict_General
-from header_bar import HeaderBar
+from tool_bar import ToolBar
 from page_starting import PageStarting
 from rounds import Rounds
 from objs_at_fullscreen import OBJs_1
@@ -90,7 +92,8 @@ class Scrabble(Gtk.Window):
         self.full = 0
         self.all_letters = 0
         #- objects2 -
-        self.hd_bar = HeaderBar(self)
+        # self.hd_bar = HeaderBar(self)
+        self.tool_bar = ToolBar(self)
         self.dict_chequer = Dict_General(self)
         self.sideletters = SideLetters(self)
         self.sideinfo = SideInfo(self)
@@ -195,7 +198,8 @@ class Scrabble(Gtk.Window):
 
     def start_old_game(self,*a):
         self.stack.set_visible_child_name('n1')
-        self.hd_bar.show_hide_action_buttons()
+        # self.hd_bar.show_hide_action_buttons()
+        self.tool_bar.show_hide_action_buttons()
         self.started = True
         list_saved = load_game_scrabble()
         for a in list_saved[0].keys():
@@ -223,6 +227,8 @@ class Scrabble(Gtk.Window):
 
     def load_language_game(self, *a):
         lang = config.getv('language_scrabble')
+        if lang == None:
+            lang = config.getv('language_surface')
         self.lang_code = DICT_LANGUAGES_CODE[lang]
         self.list_letters_repeated = get_list_letters_repeated(self.lang_code)
         self.count_pieces = len(self.list_letters_repeated)
@@ -253,6 +259,8 @@ class Scrabble(Gtk.Window):
 
     def load(self, *a):
         lang = config.getv('language_scrabble')
+        if lang == None:
+            lang = config.getv('language_surface')
         if lang in self.list_language_ready:
             self.load_language_game()
             if config.getn('saved') == 1:
@@ -261,7 +269,8 @@ class Scrabble(Gtk.Window):
                     return
                 except: pass
         self.stack.set_visible_child_name('n0')
-        self.hd_bar.show_hide_action_buttons()
+        # self.hd_bar.show_hide_action_buttons()
+        self.tool_bar.show_hide_action_buttons()
     
     def set_fullscreen_cb(self, *a):
         if self.full == 0:
@@ -283,25 +292,38 @@ class Scrabble(Gtk.Window):
         self.maximize()
         self.set_icon_name('gscrabble')
         self.set_title(_('Golden Scrabble'))
-        self.set_titlebar(self.hd_bar)
+        # self.set_titlebar(self.hd_bar)
         self.axl = Gtk.AccelGroup()
         self.add_accel_group(self.axl)
         #============================================
         self.stack.set_transition_type(Gtk.StackTransitionType.CROSSFADE)
         self.stack.set_transition_duration(200)
         #============================================
+        self.vbox_window = Gtk.Box(spacing=0,orientation=Gtk.Orientation.VERTICAL)
         self.hb_window = Gtk.Box(spacing=0,orientation=Gtk.Orientation.HORIZONTAL)
         self.vb_letters = Gtk.Box(spacing=0,orientation=Gtk.Orientation.VERTICAL)
         self.vb_letters.pack_start(self.objs1, False, False, 0)
         self.objs1.set_no_show_all(True)
         self.vb_letters.pack_start(self.sideletters, True, True, 0)
         #----------------------------------------------------------------------------------
+        # button_names = [Gtk.STOCK_ABOUT, Gtk.STOCK_ADD, Gtk.STOCK_REMOVE, Gtk.STOCK_QUIT]
+        # self.buttons = [Gtk.ToolButton.new_from_stock(name) for name in button_names]
+        # self.toolbar = Gtk.Toolbar()
+        # self.toolbar.set_show_arrow(False)
+        # for button in self.buttons:
+        #     self.toolbar.insert(button, -1)
+        # style_context = self.toolbar.get_style_context()
+        # style_context.add_class(Gtk.STYLE_CLASS_INLINE_TOOLBAR)
+        #----------------------------------------------------------------------------------
+        self.vbox_window.pack_start(self.tool_bar, False, False, 0)
+        self.vbox_window.pack_start(self.hb_window, True, True, 0)
+        #----------------------------------------------------------------------------------
         self.hb_window.pack_start(self.vb_letters, False, False, 0)
         self.hb_window.pack_start(self.chequer, True, True, 0)
         self.hb_window.pack_start(self.sideinfo, False, False, 0)
         #---------------------------------------------------------------------------------
         self.stack.add_named(self.pagestarting, 'n0')
-        self.stack.add_named(self.hb_window, 'n1')
+        self.stack.add_named(self.vbox_window, 'n1')
         #---------------------------------------------------------------------------------
         self.sideletters.enable_model_drag_source(Gdk.ModifierType.BUTTON1_MASK, [], Gdk.DragAction.COPY)
         self.sideletters.drag_source_set_target_list(None)
@@ -312,12 +334,18 @@ class Scrabble(Gtk.Window):
         self.add(self.stack)
         #------------------------------------------------------------------------------------
         self.axl.connect(Gdk.KEY_F11, 0, Gtk.AccelFlags.VISIBLE, self.set_fullscreen_cb)
-        self.axl.connect(Gdk.KEY_W, 0, Gtk.AccelFlags.VISIBLE, self.hd_bar.help_me_letters)
-        self.axl.connect(Gdk.KEY_U, 0, Gtk.AccelFlags.VISIBLE, self.hd_bar.undo_added)
-        self.axl.connect(Gdk.KEY_S, 0, Gtk.AccelFlags.VISIBLE, self.hd_bar.skip_2_computer)
-        self.axl.connect(Gdk.KEY_C, 0, Gtk.AccelFlags.VISIBLE, self.hd_bar.change_my_letters)
-        self.axl.connect(Gdk.KEY_O, 0, Gtk.AccelFlags.VISIBLE, self.hd_bar.apply_added)
-        self.axl.connect(Gdk.KEY_G, 0, Gtk.AccelFlags.VISIBLE, self.hd_bar.mepref.restart_game)
+        ## self.axl.connect(Gdk.KEY_W, 0, Gtk.AccelFlags.VISIBLE, self.hd_bar.help_me_letters)
+        ## self.axl.connect(Gdk.KEY_U, 0, Gtk.AccelFlags.VISIBLE, self.hd_bar.undo_added)
+        ## self.axl.connect(Gdk.KEY_S, 0, Gtk.AccelFlags.VISIBLE, self.hd_bar.skip_2_computer)
+        ## self.axl.connect(Gdk.KEY_C, 0, Gtk.AccelFlags.VISIBLE, self.hd_bar.change_my_letters)
+        ## self.axl.connect(Gdk.KEY_O, 0, Gtk.AccelFlags.VISIBLE, self.hd_bar.apply_added)
+        ## self.axl.connect(Gdk.KEY_G, 0, Gtk.AccelFlags.VISIBLE, self.hd_bar.mepref.restart_game)
+        self.axl.connect(Gdk.KEY_W, 0, Gtk.AccelFlags.VISIBLE, self.tool_bar.help_me_letters)
+        self.axl.connect(Gdk.KEY_U, 0, Gtk.AccelFlags.VISIBLE, self.tool_bar.undo_added)
+        self.axl.connect(Gdk.KEY_S, 0, Gtk.AccelFlags.VISIBLE, self.tool_bar.skip_2_computer)
+        self.axl.connect(Gdk.KEY_C, 0, Gtk.AccelFlags.VISIBLE, self.tool_bar.change_my_letters)
+        self.axl.connect(Gdk.KEY_O, 0, Gtk.AccelFlags.VISIBLE, self.tool_bar.apply_added)
+        self.axl.connect(Gdk.KEY_G, 0, Gtk.AccelFlags.VISIBLE, self.tool_bar.mepref.restart_game)
         self.axl.connect(Gdk.KEY_Q, ACCEL_CTRL_MOD, Gtk.AccelFlags.VISIBLE, self.quit_app)
         self.axl.connect(Gdk.KEY_P, 0, Gtk.AccelFlags.VISIBLE, lambda *a: DialogPreference(self))
         self.axl.connect(Gdk.KEY_A, 0, Gtk.AccelFlags.VISIBLE, lambda *a: About(self))

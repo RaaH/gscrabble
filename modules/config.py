@@ -6,7 +6,9 @@
 
 from os.path import join, dirname, exists, expanduser
 from os import mkdir
+from  languages import *
 import configparser
+import locale
 
 myfile = join(expanduser('~/.gscrabble'), 'gscrabble.cfg')
 config = configparser.RawConfigParser()

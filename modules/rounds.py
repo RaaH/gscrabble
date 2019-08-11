@@ -181,7 +181,7 @@ class Rounds(object):
             self.pt.add_timer(_('The computer does not have any words.'))
             if not self.change_computer_letters():
                 if self.pt.last_round_player == False:
-                    if len(self.pt.hd_bar.list_help_words) == 0:
+                    if len(self.pt.tool_bar.list_help_words) == 0:
                         self.end_game()
                         return
                     res = sure(self.pt, _('Computer does not have a word if you does not have a word, the game will end. \n Do you want that?'))
@@ -213,11 +213,11 @@ class Rounds(object):
     #a تحميل قائمة الكلمات المقترحة للاعب---------------------------
     def load_words_help(self, *a):
         list_words = self.pt.dict_chequer.get_words_help()
-        self.pt.hd_bar.list_help_words.clear()
+        self.pt.tool_bar.list_help_words.clear()
         for a in list_words:
             for b in a[1]:
                 word = get_word_complex_letters(self.pt.lang_code, b[0])
-                if word not in self.pt.hd_bar.list_help_words: self.pt.hd_bar.list_help_words.append(word)
+                if word not in self.pt.tool_bar.list_help_words: self.pt.tool_bar.list_help_words.append(word)
         
     def round_starting(self, started_player):
         if started_player == 'player':

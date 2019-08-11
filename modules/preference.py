@@ -23,8 +23,8 @@ class Preference(Gtk.Box):
     
     #-----------------------------------------------------------
     def restart_game(self, *a):
-        if self.pt.all_letters == 1: self.pt.hd_bar.close_show_letters()
-        self.pt.hd_bar.btn_pref.set_active(False)
+        if self.pt.all_letters == 1: self.pt.tool_bar.close_show_letters()
+        self.pt.tool_bar.btn_pref.set_active(False)
         if list(self.pt.dict_chequer.values()) == [0,]*225: self.pt.restart_game()
         if self.pt.ended == True: self.pt.restart_game()
         if self.pt.stack.get_visible_child_name() == 'n0':  self.pt.restart_game()
@@ -45,12 +45,12 @@ class Preference(Gtk.Box):
         btn_lang.set_label(_('Preference'))
         self.pack_start(btn_lang, False, False, 0)
         btn_lang.connect('clicked', lambda *a: DialogPreference(self.pt))
-        btn_lang.connect('clicked', lambda *a: self.pt.hd_bar.btn_pref.set_active(False))
+        btn_lang.connect('clicked', lambda *a: self.pt.tool_bar.btn_pref.set_active(False))
         
         btn_about = Gtk.ToolButton()
         btn_about.set_label(_('About!'))
         self.pack_start(btn_about, False, False, 0)
-        btn_about.connect('clicked', lambda *a: self.pt.hd_bar.btn_pref.set_active(False))
+        btn_about.connect('clicked', lambda *a: self.pt.tool_bar.btn_pref.set_active(False))
         btn_about.connect('clicked', lambda *a: About(self.pt))
         self.show_all()
         
