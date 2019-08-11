@@ -23,3 +23,67 @@ Description: downloader of videos from YouTube and other sites
  youtube-dl is a small command-line program to download videos from
  YouTube.com and other sites that don't provide direct links to the
  videos served.
+
+Package: gscrabble-ar
+Architecture: all
+Depends: gscrabble
+Description: downloader of videos from YouTube and other sites
+ youtube-dl is a small command-line program to download videos from
+ YouTube.com and other sites that don't provide direct links to the
+ videos served.
+
+Package: gscrabble-de
+Architecture: all
+Depends: gscrabble
+Description: downloader of videos from YouTube and other sites
+ youtube-dl is a small command-line program to download videos from
+ YouTube.com and other sites that don't provide direct links to the
+ videos served.
+
+Package: gscrabble-en
+Architecture: all
+Depends: gscrabble
+Description: downloader of videos from YouTube and other sites
+ youtube-dl is a small command-line program to download videos from
+ YouTube.com and other sites that don't provide direct links to the
+ videos served.
+
+Package: gscrabble-es
+Architecture: all
+Depends: gscrabble
+Description: downloader of videos from YouTube and other sites
+ youtube-dl is a small command-line program to download videos from
+ YouTube.com and other sites that don't provide direct links to the
+ videos served.
+
+Package: gscrabble-fr
+Architecture: all
+Depends: gscrabble
+Description: downloader of videos from YouTube and other sites
+ youtube-dl is a small command-line program to download videos from
+ YouTube.com and other sites that don't provide direct links to the
+ videos served.
+
+Package: gscrabble-it
+Architecture: all
+Depends: gscrabble
+Description: downloader of videos from YouTube and other sites
+ youtube-dl is a small command-line program to download videos from
+ YouTube.com and other sites that don't provide direct links to the
+ videos served.
+
+Package: gscrabble-nl
+Architecture: all
+Depends: gscrabble
+Description: downloader of videos from YouTube and other sites
+ youtube-dl is a small command-line program to download videos from
+ YouTube.com and other sites that don't provide direct links to the
+ videos served.
+
+Package: gscrabble-ru
+Architecture: all
+Depends: gscrabble
+Description: downloader of videos from YouTube and other sites
+ youtube-dl is a small command-line program to download videos from
+ YouTube.com and other sites that don't provide direct links to the
+ videos served.
