@@ -6,8 +6,8 @@
 
 from os.path import join, dirname, exists, expanduser
 from os import mkdir
-from  languages import *
 import configparser
+from  languages import *
 import locale
 
 myfile = join(expanduser('~/.gscrabble'), 'gscrabble.cfg')
