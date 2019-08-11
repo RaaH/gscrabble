@@ -7,6 +7,7 @@ Build-Depends:
  dh-exec,
  dh-python,
  python3-pkg-resources,
+ bash-completion
 Build-Depends-Indep:
  python3
 X-Python3-Version: >= 3.2
