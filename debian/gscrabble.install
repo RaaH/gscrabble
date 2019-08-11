@@ -1,0 +1,6 @@
+debian/python3-gscrabble/usr/share/doc /usr/share
+debian/python3-gscrabble/usr/share/icons /usr/share
+debian/python3-gscrabble/usr/share/applications /usr/share
+debian/python3-gscrabble/usr/share/GScrabble/modules /usr/share/GScrabble
+debian/python3-gscrabble/usr/bin /usr
+debian/python3-gscrabble/usr/lib /usr

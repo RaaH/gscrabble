@@ -1,0 +1,3 @@
+debian/python3-gscrabble/usr/share/GScrabble/locale/fr /usr/share/GScrabble/locale
+debian/python3-gscrabble/usr/share/GScrabble/data/stems/fr.stems /usr/share/GScrabble/data/stems
+debian/python3-gscrabble/usr/share/GScrabble/data/dicts/fr.dict /usr/share/GScrabble/data/dicts

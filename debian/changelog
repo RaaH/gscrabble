@@ -1,4 +1,12 @@
-gscrabble (0.1.3) dev; urgency=medium
+gscrabble (0.1.4) release; urgency=medium
+
+  * Add locale de, es & it
+  * Add dictionary  de.dict, en.dict, es.dict, fr.dict, it.dict, nl.dict and ru.dict
+  * Add Stems it.stems and nl.stems 
+
+ -- Thierry HUCHARD <thierry@ordissimo.com>  Sun, 11 Aug 2019 16:45:39 +0200
+
+gscrabble (0.1.3) release; urgency=medium
 
   * New upstream version.
 
