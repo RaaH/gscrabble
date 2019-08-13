@@ -1,7 +1,18 @@
 [Desktop Entry]
-Name=GoldenScrabble
-Comment=crossword puzzle game
-Comment[ar]=لعبة كلمات متقاطعة
+Name[it]=Scrabble d'oro
+Name[es]=Scrabble dorado
+Name[fr]=Golden Scrabble
+Name[ar]=سكرابل الذهبية
+Name[de]=Goldenes Scrabble
+Name[nl]=Gouden Scrabble
+Name=Golden Scrabble
+Comment[it]=Gioco di cruciverba divertente e utile.
+Comment[es]=Juego de crucigramas divertido y útil.
+Comment[fr]=Jeu de mots croisés amusant et utile.
+Comment[ar]=لعبة كلمات متقاطعة مسلية ومفيدة.
+Comment[de]=Kreuzworträtselspiel amüsant und nützlich.
+Comment[nl]=Kruiswoordpuzzelspel - vermakelijk en nuttig.
+Comment=Crossword puzzle game amusing and useful.
 Exec=gscrabble
 Icon=gscrabble
 Terminal=false
@@ -9,5 +20,3 @@ Type=Application
 Encoding=UTF-8
 Categories=X-Islamic-Software;GTK;Game;
 StartupNotify=true
-Name[ar]=سكرابل الذهبية
-Name[ar_DZ]=gscrabble
