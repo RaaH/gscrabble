@@ -6,3 +6,7 @@ APPLICATIONSDIR = usr/share/applications
 # find .. -type f \! -path "*/.svn/*" \! -path "../po/*" -name "*desktop.in" -exec grep -l -E "^Categories=" {} \; | sed -e 's/^/  /;s/$/ \\/'
 SOURCES_PY = \
   ../modules/*.py
+
+# find .. -type f \! -path "*/.svn/*" \! -path "../po/*" -name "*desktop.in" -exec grep -l -E "^Categories=.*(Game|Ordissimo)" {} \; | sed -e 's/^/  /;s/$/ \\/'
+SOURCES_DESKTOP = \
+  ../gscrabble.desktop.in

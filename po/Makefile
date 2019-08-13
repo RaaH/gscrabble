@@ -30,6 +30,7 @@ LANG = $(basename $(PO))
 ifneq ($(SOURCES_SH)$(SOURCES_PY)$(SOURCES_JAVA)$(SOURCES_C),)
 MO = $(addsuffix .mo,$(LANG))
 endif
+DESKTOPS = $(basename $(SOURCES_DESKTOP))
 
 %.mo: %.po
 	@$(MSGFMT) -c --verbose --statistics -o $@ $<
@@ -58,7 +59,19 @@ endif
 	 echo ; exit 1; \
 	fi;
 
-all: $(MO)
+%.desktop: %.desktop.in $(PO)
+	@echo Generating desktop file : $@
+	@tmpfiles="$@-t $@-n-t"; \
+	cp $< $@-t || exit 1; \
+	for pofile in $(PO); do \
+	   $(MSGFMT) --desktop --template $@-t -o $@-n-t \
+	   --locale $${pofile%.po} $$pofile \
+	   || { $(RM) $$tmpfiles; exit 1; }; \
+	   mv $@-n-t $@-t || { $(RM) $$tmpfiles; exit 1; } \
+	done; \
+	mv $@-t $@ || { $(RM) $$tmpfiles; exit 1; } \
+
+all: $(MO) $(DESKTOPS)
 
 update-po: SHELL := /bin/bash
 update-po: $(DOMAIN).pot
@@ -71,12 +84,17 @@ update-po: $(DOMAIN).pot
 	$(MSGMERGE) --previous -U $$po $(DOMAIN).pot; \
 	done;
 
-$(DOMAIN).pot: Makevars $(SOURCES_PY)
+$(DOMAIN).pot: Makevars $(SOURCES_PY) $(SOURCES_DESKTOP)
 	@echo "Updating $@ .. "
 	@$(shell :> $@)
 ifdef SOURCES_PY
 	@echo -n "  - PY .. "
 	@$(XGETTEXT) $(XGETTEXTOPTIONSCOMMON) $(XGETTEXTOPTIONS_PY) -o $@ -j $(SOURCES_PY)
+	@echo done
+endif
+ifdef SOURCES_DESKTOP
+	@echo -n "  - DESKTOP .. "
+	@$(XGETTEXT) $(XGETTEXTOPTIONSCOMMON) $(XGETTEXTOPTIONS_DESKTOP) -o $@ -j $(SOURCES_DESKTOP)
 	@echo done
 endif
 
