@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@ordissimo.com\n"
-"POT-Creation-Date: 2019-06-05 18:26+0200\n"
+"POT-Creation-Date: 2019-08-16 19:35+0200\n"
 "PO-Revision-Date: 2019-06-05 14:56+0200\n"
 "Last-Translator: Brice <brice@ordissimo.com>\n"
 "Language-Team: \n"
@@ -381,7 +381,7 @@ msgstr ""
 msgid "Computer pieces"
 msgstr "Jetons de l'ordinateur"
 
-#: ../modules/about.py:19
+#: ../modules/about.py:19 ../gscrabble.desktop.in:4
 msgid "Crossword puzzle game amusing and useful."
 msgstr "Jeu de mots croisés amusant et utile."
 
@@ -513,6 +513,7 @@ msgstr "Fin de la partie."
 
 #: ../modules/about.py:17 ../modules/gscrabble.py:285
 #: ../modules/header_bar.py:170 ../modules/header_bar.py:267
+#: ../gscrabble.desktop.in:3
 msgid "Golden Scrabble"
 msgstr "Golden Scrabble"
 
@@ -1081,6 +1082,10 @@ msgstr "pour annuler l'installation des lettres"
 #: ../modules/text_help.py:57
 msgid "from site:"
 msgstr "du site:"
+
+#: ../gscrabble.desktop.in:6
+msgid "gscrabble"
+msgstr ""
 
 #: ../modules/about.py:22
 msgid "translator-credits"
