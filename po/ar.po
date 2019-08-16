@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@ordissimo.com\n"
-"POT-Creation-Date: 2019-06-05 18:26+0200\n"
+"POT-Creation-Date: 2019-08-16 19:35+0200\n"
 "PO-Revision-Date: 2018-07-28 03:51+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -361,7 +361,7 @@ msgstr ""
 msgid "Computer pieces"
 msgstr "قطع الحاسب"
 
-#: ../modules/about.py:19
+#: ../modules/about.py:19 ../gscrabble.desktop.in:4
 msgid "Crossword puzzle game amusing and useful."
 msgstr "لعبة كلمات متقاطعة مسلية ومفيدة."
 
@@ -494,6 +494,7 @@ msgstr "انتهت اللعبة"
 
 #: ../modules/about.py:17 ../modules/gscrabble.py:285
 #: ../modules/header_bar.py:170 ../modules/header_bar.py:267
+#: ../gscrabble.desktop.in:3
 msgid "Golden Scrabble"
 msgstr "سكرابل الذهبية"
 
@@ -1038,6 +1039,10 @@ msgstr "لأجل التراجع عن الحروف المثبتة."
 #: ../modules/text_help.py:57
 msgid "from site:"
 msgstr "من موقع:"
+
+#: ../gscrabble.desktop.in:6
+msgid "gscrabble"
+msgstr ""
 
 #: ../modules/about.py:22
 msgid "translator-credits"
