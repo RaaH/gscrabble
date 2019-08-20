@@ -18,6 +18,7 @@ Architecture: all
 Pre-Depends:
  dpkg (>= 1.15.7.2)
 Depends: python3, python3-gi, gir1.2-gtk-3.0, gir1.2-gstreamer-1.0,
+ python3-gi-cairo, python3-cairo,
  ${misc:Depends},
  ${python3:Depends}
 Description: downloader of videos from YouTube and other sites
