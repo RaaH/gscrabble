@@ -8,3 +8,4 @@ export PATH := $(CURDIR)/debian/utils:$(PATH)
 	dh $@ --with python3 --buildsystem=pybuild --with bash-completion
 
 override_dh_auto_test:
+	echo 'Test'
