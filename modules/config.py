@@ -7,6 +7,8 @@
 from os.path import join, dirname, exists, expanduser
 from os import mkdir
 import configparser
+from languages import *
+import locale
 
 myfile = join(expanduser('~/.gscrabble'), 'gscrabble.cfg')
 config = configparser.RawConfigParser()
@@ -38,7 +40,9 @@ def load():
     if not config.has_option(section, 'language_surface'):
         config.set(section, 'language_surface', '< System >')
     if not config.has_option(section, 'language_scrabble'):
-        config.set(section, 'language_scrabble', 'العربية')
+        loc, enc = locale.getdefaultlocale()
+        ln = loc[0:2]
+        config.set(section, 'language_scrabble', DICT_LANGUAGES_NAME[ln])
     if not config.has_option(section, 'saved'):
         config.set(section, 'saved', 0)
     if not config.has_option(section, 'points_player'):

@@ -1,23 +1,46 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-
-from distutils.core import setup
+from distutils.core import setup, Extension
+from distutils.command.clean import clean
 from glob import glob
+import os
+
+def create_localised_files():
+    mo_files = []
+    # os.system('bash create_po.sh')
+    os.system('make -C po')
+    os.system('make -C po DESTDIR=../ install')
+    mo_files.append(('share/GScrabble/locale/ar/LC_MESSAGES/', ['locale/ar/LC_MESSAGES/gscrabble.mo']))
+    mo_files.append(('share/GScrabble/locale/de/LC_MESSAGES/', ['locale/de/LC_MESSAGES/gscrabble.mo']))
+    mo_files.append(('share/GScrabble/locale/en/LC_MESSAGES/', ['locale/en/LC_MESSAGES/gscrabble.mo']))
+    mo_files.append(('share/GScrabble/locale/es/LC_MESSAGES/', ['locale/es/LC_MESSAGES/gscrabble.mo']))
+    mo_files.append(('share/GScrabble/locale/fr/LC_MESSAGES/', ['locale/fr/LC_MESSAGES/gscrabble.mo']))
+    mo_files.append(('share/GScrabble/locale/it/LC_MESSAGES/', ['locale/it/LC_MESSAGES/gscrabble.mo']))
+    mo_files.append(('share/GScrabble/locale/nl/LC_MESSAGES/', ['locale/nl/LC_MESSAGES/gscrabble.mo']))
+    mo_files.append(('share/applications',['desktop/gscrabble.desktop']))
+    return mo_files
+
+class CleanFiles(clean):
+    def run(self):
+        super().run()
+        cmd_list = dict(
+            po_clean='make -C po clean',
+            irm_locale_and_desktop='rm -rf locale gscrabble.desktop'
+        )
+        for key, cmd in cmd_list.items():
+            os.system(cmd)
+
+
 
 
 doc_files  = ['AUTHORS', 'ChangeLog', 'README', 'TODO']
 data_files = [
-              ('share/applications/', ['gscrabble.desktop']),
               ('share/icons/hicolor/gscalable/apps', ['gscrabble.svg']),
               ('share/doc/GScrabble', doc_files),
-	      ('share/GScrabble/modules', glob('modules/*.py')),
+              ('share/GScrabble/modules', glob('modules/*.py')),
               ('share/GScrabble/data/stems', glob('data/stems/*.*')),
               ('share/GScrabble/data/dicts', glob('data/dicts/*.*')),
-              ('share/GScrabble/locale/en/LC_MESSAGES/', ['locale/en/LC_MESSAGES/gscrabble.mo']),
-              ('share/GScrabble/locale/ar/LC_MESSAGES/', ['locale/ar/LC_MESSAGES/gscrabble.mo']),
-	      ('share/GScrabble/locale/nl/LC_MESSAGES/', ['locale/nl/LC_MESSAGES/gscrabble.mo']),
-	      ('share/GScrabble/locale/fr/LC_MESSAGES/', ['locale/fr/LC_MESSAGES/gscrabble.mo']),
               ('share/icons/hicolor/16x16/apps/', ['hicolor/16x16/apps/gscrabble.png']),
               ('share/icons/hicolor/22x22/apps/', ['hicolor/22x22/apps/gscrabble.png']),
               ('share/icons/hicolor/24x24/apps/', ['hicolor/24x24/apps/gscrabble.png']),
@@ -28,7 +51,7 @@ data_files = [
               ('share/icons/hicolor/72x72/apps/', ['hicolor/72x72/apps/gscrabble.png']),
               ('share/icons/hicolor/96x96/apps/', ['hicolor/96x96/apps/gscrabble.png']),
               ('share/icons/hicolor/128x128/apps/',['hicolor/128x128/apps/gscrabble.png']),
-              ]
+              ] + create_localised_files()
 
 setup(
       name="GoldenScrabble",
@@ -50,6 +73,9 @@ setup(
           'Natural Language :: Arabic',
           'Intended Audience :: End Users/Desktop',
           'Topic :: Desktop Environment :: Gnome',
-			],
+      ],
+      cmdclass={
+          'clean': CleanFiles,
+      },
       data_files=data_files
       )

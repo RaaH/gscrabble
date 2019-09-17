@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Golden Scrabble
+Comment=Crossword puzzle game amusing and useful.
+Exec=gscrabble
+Icon=gscrabble
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=X-Islamic-Software;GTK;Game;
+StartupNotify=true

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@ordissimo.com\n"
-"POT-Creation-Date: 2019-06-05 18:26+0200\n"
+"POT-Creation-Date: 2019-08-16 19:35+0200\n"
 "PO-Revision-Date: 2018-08-01 11:55+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch <vistausss@outlook.com>\n"
@@ -370,7 +370,7 @@ msgstr ""
 msgid "Computer pieces"
 msgstr "Stenen van de computer"
 
-#: ../modules/about.py:19
+#: ../modules/about.py:19 ../gscrabble.desktop.in:4
 msgid "Crossword puzzle game amusing and useful."
 msgstr "Kruiswoordpuzzelspel - vermakelijk en nuttig."
 
@@ -502,6 +502,7 @@ msgstr "Spel afgelopen."
 
 #: ../modules/about.py:17 ../modules/gscrabble.py:285
 #: ../modules/header_bar.py:170 ../modules/header_bar.py:267
+#: ../gscrabble.desktop.in:3
 msgid "Golden Scrabble"
 msgstr "Gouden Scrabble"
 
@@ -946,10 +947,10 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"Deze applicatie is vrije software; je mag het heruitgeven en/of "
-"aanpassen onder de voorwaarden van de GNU General Public License, zoals "
-"bepaald door de Free Software Foundation; versie 2 van de licentie, of "
-"(indien gewenst) een latere versie."
+"Deze applicatie is vrije software; je mag het heruitgeven en/of aanpassen "
+"onder de voorwaarden van de GNU General Public License, zoals bepaald door "
+"de Free Software Foundation; versie 2 van de licentie, of (indien gewenst) "
+"een latere versie."
 
 #: ../modules/text_help.py:65
 msgid ""
@@ -1055,6 +1056,10 @@ msgstr "om geplaatste letters terug te halen."
 #: ../modules/text_help.py:57
 msgid "from site:"
 msgstr "van de website:"
+
+#: ../gscrabble.desktop.in:6
+msgid "gscrabble"
+msgstr ""
 
 #: ../modules/about.py:22
 msgid "translator-credits"

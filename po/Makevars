@@ -1,8 +1,13 @@
 DOMAIN = gscrabble
 BUGSADDR = bugs@ordissimo.com
 
-APPLICATIONSDIR = usr/share/applications
+LOCALEDIR = locale
+APPLICATIONSDIR = .
 
 # find .. -type f \! -path "*/.svn/*" \! -path "../po/*" -name "*desktop.in" -exec grep -l -E "^Categories=" {} \; | sed -e 's/^/  /;s/$/ \\/'
 SOURCES_PY = \
   ../modules/*.py
+
+# find .. -type f \! -path "*/.svn/*" \! -path "../po/*" -name "*desktop.in" -exec grep -l -E "^Categories=.*(Game|Ordissimo)" {} \; | sed -e 's/^/  /;s/$/ \\/'
+SOURCES_DESKTOP = \
+  ../desktop/gscrabble.desktop.in
