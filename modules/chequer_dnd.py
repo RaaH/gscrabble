@@ -166,7 +166,7 @@ class Chequer(DrawArea):
             n = 8
         else: 
             rect.y = ev.y
-            n = 4
+            n = 8
         pop.set_pointing_to(rect)
         pop.set_position(Gtk.PositionType.TOP)
         #----------------------------------------------
