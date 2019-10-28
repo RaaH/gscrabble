@@ -57,7 +57,7 @@ setup(
       name="GoldenScrabble",
       description='crossword puzzle game',
       long_description='crossword puzzle game is funny and useful.',
-      version="0.4.0",
+      version="0.1.4",
       author='Ahmed Raghdi',
       author_email='asmaaarab@gmail.com',
       url="http://sourceforge.net/projects/gscrabble/files/",
