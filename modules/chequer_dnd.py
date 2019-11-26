@@ -166,7 +166,7 @@ class Chequer(DrawArea):
             n = 8
         else: 
             rect.y = ev.y
-            n = 4
+            n = 8
         pop.set_pointing_to(rect)
         pop.set_position(Gtk.PositionType.TOP)
         #----------------------------------------------
@@ -180,7 +180,11 @@ class Chequer(DrawArea):
             btn.set_name(letter)
             btn.connect('clicked', self.set_letter_popover, pop)
             flowbox.add(btn)
-        clo = Gtk.Button('ألغ')
+        img = Gtk.Image.new_from_icon_name('window-close-symbolic', 2)
+        clo = Gtk.Button()
+        clo.set_image(img)
+        clo.get_style_context().add_class(Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION)
+        clo. set_relief(Gtk.ReliefStyle.NONE) 
         clo.connect('clicked', lambda *a: pop.hide())
         flowbox.add(clo)
         pop.add(flowbox)

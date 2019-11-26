@@ -15,7 +15,7 @@ class About(Gtk.AboutDialog):
         self.set_icon_name("gscrabble")
         self.set_logo_icon_name('gscrabble')
         self.set_program_name(_("Golden Scrabble"))
-        self.set_version("0.1")
+        self.set_version("0.1.4")
         self.set_comments(_("Crossword puzzle game amusing and useful."))
         self.set_website("http://sourceforge.net/projects/gscrabble/files/")
         self.set_website_label(_('Golden Scrabble website'))
