@@ -48,19 +48,19 @@ msgstr "Beginnen"
 
 #: modules/chequer_draw.py:27
 msgid "DLS"
-msgstr "Doppelter Buchstabenwert"
+msgstr "B x2"
 
 #: modules/chequer_draw.py:27
 msgid "TLS"
-msgstr "Dreifacher Buchstabenwert"
+msgstr "B x3"
 
 #: modules/chequer_draw.py:28
 msgid "DWS"
-msgstr "Doppelter Wortwert"
+msgstr "W x2"
 
 #: modules/chequer_draw.py:28
 msgid "TWS"
-msgstr "Dreifacher Wortwert"
+msgstr "W x3"
 
 #: modules/word_viewer.py:12
 msgid "Dictionary"
