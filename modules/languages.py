@@ -71,6 +71,7 @@ LANGUAGES_SURFACE = [
              'Italiano',
              'Nederlands',
              'Русский',
+             'Deutsch',
              ]
 
 DICT_LANGUAGES_CODE = {
