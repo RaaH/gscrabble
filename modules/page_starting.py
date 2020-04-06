@@ -168,7 +168,22 @@ class PageStarting(Gtk.Box):
         #----------------------------------------------------------------------------------
 
         self.pack_start(hb0, False, False, 20)
+        
+         
+        link1 = Gtk.LinkButton.new_with_label(_('golden scrabble'))
+        link1.set_uri('https://sourceforge.net/projects/gscrabble/files/app/')
+        self.pack_start(link1, False, False, 0)
+        
+        link1 = Gtk.LinkButton.new_with_label(_('Languages to play'))
+        link1.set_uri('https://sourceforge.net/projects/gscrabble/files/languages/')
+        self.pack_start(link1, False, False, 0)
+        
+        link1 = Gtk.LinkButton.new_with_label(_('code source'))
+        link1.set_uri('https://github.com/RaaH/gscrabble')
+        self.pack_start(link1, False, False, 0)
+        
         self.show_all()
+        
         
         
         
