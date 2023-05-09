@@ -194,8 +194,10 @@ class Dict_General(dict):
             value = self.count_word(ls_new, ls_word, is_computer, main_word)
             ls_side_word = [value, [word1, value]]
             return ls_side_word
-        else: 
+        elif Gtk.Widget.get_default_direction() == Gtk.TextDirection.RTL: 
             nw1 = True
+        else: 
+            return None
         ls_letters.reverse()
         ls_indexes.reverse()
         word2 = ''.join(ls_letters)
